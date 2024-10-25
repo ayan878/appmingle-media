@@ -40,7 +40,7 @@ function MobAddressbar() {
       >
         <div className="flex flex-col items-start p-4 h-full">
           <button
-            className="mb-4 ml-72 border border-gray-500 rounded-full"
+            className="mb-4 ml-64 border border-gray-500 rounded-full"
             onClick={() => setOpenMenu(false)}
           >
             <IoClose size={24} className="text-gray-400" />
