@@ -28,7 +28,7 @@ function Hero() {
               Website development builds functional, user-friendly sites for
               enhanced online presence.
             </p>
-            <p className="text-center md:text-left font-bold">
+            <p className="text-xs text-center md:text-left font-bold">
               <a href="/services" className="text-blue-500">
                 READ MORE...
               </a>
@@ -45,7 +45,7 @@ function Hero() {
               Mobile app development creates engaging, functional apps for
               various platforms.
             </p>
-            <p className="text-center md:text-left font-bold">
+            <p className="text-xs text-center md:text-left font-bold">
               <a href="/services" className="text-blue-500">
                 READ MORE...
               </a>
@@ -65,7 +65,7 @@ function Hero() {
             Digital marketing promotes brands online through targeted strategies
             and engaging content.
           </p>
-          <p className="text-center md:text-left font-bold">
+          <p className="text-xs text-center md:text-left font-bold">
             <a href="/services" className="text-blue-500">
               READ MORE...
             </a>
@@ -80,7 +80,7 @@ function Hero() {
             SEO improves website visibility and traffic via search engine
             optimization.
           </p>
-          <p className="text-center md:text-left font-bold">
+          <p className="text-xs text-center md:text-left font-bold">
             <a href="/services" className="text-blue-500">
               READ MORE...
             </a>
@@ -97,7 +97,7 @@ function Hero() {
             CRM manages customer relations; ERP integrates business processes
             efficiently.
           </p>
-          <p className="text-center md:text-left font-bold">
+          <p className="text-xs text-center md:text-left font-bold">
             <a href="/services" className="text-blue-500">
               READ MORE...
             </a>
