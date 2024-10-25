@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div 
     // className="bg-hero bg-cover sm:h-screen md:h-auto md:bg-contain  md:bg-no-repeat "
-    className="bg-mobHero md:bg-hero bg-cover h-screen md:h-auto md:bg-contain md:bg-no-repeat w-full"
+    className="bg-mobHero md:bg-hero bg-contain bg-no-repeat w-full"
     // style={{backgroundImage:`url(${hero})`, backgroundRepeat:"no-repeat",
     // backgroundSize:"contain"}}
     >
