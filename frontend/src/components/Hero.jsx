@@ -17,8 +17,8 @@ function Hero() {
           ></iframe>
         </div>
         <div className="flex flex-col md:flex-row items-center justify-between">
-          <div className="w-full md:w-2/3 p-4 space-y-3">
-            <div className="flex gap-2 items-center mx-auto justify-center md:justify-start">
+          <div className="w-full md:w-2/3 p-6 space-y-3 border-b sm:border-none">
+            <div className="flex flex-col md:flex-row gap-2 items-center mx-auto justify-center md:justify-start ">
               <FaLaptopCode className="w-8 h-8 text-blue-400" />
               <h1 className="text-xl text-center md:text-left font-bold">
                 Website Development
@@ -35,7 +35,7 @@ function Hero() {
             </p>
           </div>
           <div className="w-full md:w-2/3 p-4 space-y-3">
-            <div className="flex gap-2 items-center mx-auto justify-center md:justify-start">
+            <div className="flex flex-col md:flex-row gap-2 items-center mx-auto justify-center md:justify-start">
               <TbDeviceMobileCode className="w-8 h-8 text-blue-400" />
               <h1 className="text-xl text-center md:text-left font-bold">
                 Mobile App Development
@@ -54,8 +54,8 @@ function Hero() {
         </div>
       </div>
       <div className="flex flex-col flex-nowwrap md:flex-row justify-center py-8 gap-4 shadow-lg">
-        <div className="w-full md:w-1/3 p-4 space-y-3">
-          <div className="flex gap-2 items-center mx-auto justify-center md:justify-start">
+        <div className="w-full md:w-2/3 p-6 space-y-3 border-b sm:border-none">
+          <div className="flex flex-col md:flex-row gap-2 items-center mx-auto justify-center md:justify-start">
             <FaLaptopCode className="w-8 h-8 text-blue-400" />
             <h1 className="text-xl text-center md:text-left font-bold">
               Digital Marketing
@@ -71,8 +71,8 @@ function Hero() {
             </a>
           </p>
         </div>
-        <div className="w-full md:w-1/3 p-4 space-y-4">
-          <div className="flex gap-2 items-center mx-auto justify-center md:justify-start">
+        <div className="w-full md:w-2/3 p-6 space-y-3 border-b sm:border-none">
+          <div className="flex flex-col md:flex-row gap-2 items-center mx-auto justify-center md:justify-start">
             <FaLaptopCode className="w-8 h-8 text-blue-400" />
             <h1 className="text-xl text-center md:text-left font-bold">SEO</h1>
           </div>
@@ -87,7 +87,7 @@ function Hero() {
           </p>
         </div>
         <div className="w-full md:w-1/3 p-4 space-y-3">
-          <div className="flex gap-2 items-center mx-auto justify-center md:justify-start">
+          <div className="flex flex-col md:flex-row gap-2 items-center mx-auto justify-center md:justify-start">
             <PiMicrosoftExcelLogoFill className="w-8 h-8 text-blue-400" />
             <h1 className="text-xl text-center md:text-left font-bold">
               CRM & ERP
