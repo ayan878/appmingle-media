@@ -6,6 +6,7 @@ export default {
       backgroundImage: {
         "footer-pattern": "url('/Untitled-design-83.png')",
         hero: "url('/11.gif')",
+        mobHero: "url('/12.gif')",
       },
       container: {
         center: true,
