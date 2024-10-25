@@ -55,7 +55,7 @@ function Addressbar() {
             </div>
           </div>
         ) : (
-          <>
+          <div className="items-center justify-between gap-4 hidden md:flex ">
             <a
               href="https://www.facebook.com/appminglemedia/"
               className="flex items-center gap-2"
@@ -92,7 +92,7 @@ function Addressbar() {
               <IoSearch />
             </button>
             <IoMenu />
-          </>
+          </div>
         )}
       </div>
     </div>

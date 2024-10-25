@@ -2,6 +2,7 @@
 import Addressbar from "../components/Addressbar";
 import Header from "../components/Header"
 import hero from "../assets/11.gif";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
     >
       <Addressbar />
       <Header />
+      <Footer/>
     </div>
   );
 }

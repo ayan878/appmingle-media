@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        "footer-pattern": "url('./src/assets/Untitled-design-83.png')",
+      },
       container: {
         center: true, // Center the container
         padding: "1px", // Add padding

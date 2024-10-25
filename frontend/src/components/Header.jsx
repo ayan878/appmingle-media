@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoMdArrowDropdown } from "react-icons/io";
 import logo from "../assets/cropped-cropped-AppMingle-Media_Logo1.jpg";
-import Home from "../pages/Home";
+
 function Header() {
   const [openDropdown, setOpenDropdown] = useState(false);
 
