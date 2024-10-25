@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <div className="flex flex-col mt-56 md:mt-32 items-center md:px-8">
+    <div className="flex flex-col md:mt-32 items-center md:px-8">
       <div className="flex flex-col items-center md:flex-row bg-white justify-center gap-4 shadow-lg mb-2">
         <div className=" video-container w-full md:w-2/3 ">
           <iframe
