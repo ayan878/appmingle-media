@@ -12,16 +12,14 @@ import AboutUs from "../components/AboutUs";
 
 export default function Home() {
   return (
-    <div
-      className="bg-contain bg-hero bg-no-repeat"
-    >
+    <div className="bg-hero bg-contain  bg-no-repeat">
       <div className="flex md:hidden">
         <MobAddressbar />
       </div>
       <Addressbar />
       <Header />
       <Hero />
-      <AboutUs/>
+      <AboutUs />
       <Counting />
       <Expertteam />
       <OurBlog />

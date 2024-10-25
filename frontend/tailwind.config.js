@@ -4,18 +4,18 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "footer-pattern": "url('./src/assets/Untitled-design-83.png')",
-        "hero": "url('./src/assets/11.gif')",
+        "footer-pattern": "url('../assets/Untitled-design-83.png')",
+        hero: "url('../assets/11.gif')",
       },
       container: {
-        center: true, // Center the container
-        padding: "1px", // Add padding
+        center: true,
+        padding: "1px",
         screens: {
-          sm: "640px", // Customize for small screens
-          md: "768px", // Customize for medium screens
-          lg: "1024px", // Customize for large screens
-          xl: "1280px", // Customize for extra large screens
-          "2xl": "1536px", // Customize for 2xl screens
+          sm: "640px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1280px",
+          "2xl": "1536px",
         },
       },
     },
