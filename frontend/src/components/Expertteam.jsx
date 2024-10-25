@@ -33,7 +33,7 @@ function Expertteam() {
             <img
               src={pic.src}
               alt={pic.desc}
-              className="h-52 w-full mb-2 object-cover"
+              className="h-80 w-full mb-2 object-cover"
             />
             <span className="text-center font-semibold">{pic.desc}</span>
             <span className="text-center font-semibold mb-4">
