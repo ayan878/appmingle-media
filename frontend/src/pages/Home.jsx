@@ -8,6 +8,7 @@ import OurBlog from "../components/OurBlog";
 import Expertteam from "../components/Expertteam";
 import Counting from "../components/Counting";
 import Hero from "../components/Hero";
+import AboutUs from "../components/AboutUs";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Addressbar />
       <Header />
       <Hero />
+      <AboutUs/>
       <Counting />
       <Expertteam />
       <OurBlog />

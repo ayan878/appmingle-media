@@ -39,7 +39,7 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="flex flex-nowwrap md:flex-row justify-center gap-4 shadow-lg">
+      <div className="flex flex-nowwrap md:flex-row justify-center py-8 gap-4 shadow-lg">
         <div className="w-full md:w-1/3 p-4 space-y-3">
           <h1 className="text-xl font-bold">Digital Marketing</h1>
           <p>
@@ -71,7 +71,6 @@ function Hero() {
             efficiently.
           </p>
           <p>
-            {" "}
             <a href="/services" className="text-blue-500">
               READ MORE...
             </a>
