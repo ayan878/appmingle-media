@@ -19,7 +19,7 @@ function AboutUs() {
       <h1 className="text-3xl font-bold text-start font-mono mb-2">
         About Us
       </h1>
-      <p className="text-start font-serif md:mx-44 mb-4">
+      <p className="text-start font-serif mb-4">
         At AppMingle Media, we are passionate about creating innovative digital
         solutions that drive business growth and enhance user experiences. Our
         dedicated team of 20 talented professionals brings a wealth of expertise
