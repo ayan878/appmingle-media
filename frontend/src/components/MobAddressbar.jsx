@@ -17,7 +17,7 @@ function MobAddressbar() {
   return (
     <div className="relative mx-auto">
       <button
-        className="flex items-center justify-center gap-2"
+        className="flex items-center justify-center gap-2 py-4"
         onClick={() => setOpenMenu(true)}
       >
         <IoMenu />
