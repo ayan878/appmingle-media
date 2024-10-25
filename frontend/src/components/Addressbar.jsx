@@ -14,7 +14,7 @@ function Addressbar() {
   const [showSearch, setShowSearch] = useState(false); 
 
   return (
-    <div className="mx-8 flex py-4 items-center justify-between bg-transparent border-b">
+    <div className="hidden mx-8 py-4 items-center justify-between bg-transparent border-b md:flex">
       <div className="flex items-center justify-between gap-2">
         <a href="tel:+916203689042" className="flex items-center gap-2 text-xs">
           <IoCall /> +91 6203689042
@@ -55,7 +55,7 @@ function Addressbar() {
             </div>
           </div>
         ) : (
-          <div className="items-center justify-between gap-4 hidden md:flex ">
+          <div className="hidden md:flex items-center justify-between gap-4 ">
             <a
               href="https://www.facebook.com/appminglemedia/"
               className="flex items-center gap-2"
