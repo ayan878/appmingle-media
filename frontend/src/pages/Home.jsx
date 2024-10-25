@@ -6,6 +6,8 @@ import MobAddressbar from "../components/MobAddressbar";
 import AppMingleFamily from "../components/AppMingleFamily";
 import OurBlog from "../components/OurBlog";
 import Expertteam from "../components/Expertteam";
+import Counting from "../components/Counting";
+import Hero from "../components/Hero";
 
 export default function Home() {
   return (
@@ -23,6 +25,8 @@ export default function Home() {
       </div>
       <Addressbar />
       <Header />
+      <Hero/>
+      <Counting/>
       <Expertteam/>
       <OurBlog/>
       <AppMingleFamily/>
