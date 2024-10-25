@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaLinkedin, FaXTwitter, FaYoutube } from "react-icons/fa6";
 import { IoLogoFacebook, IoLogoInstagram } from "react-icons/io5";
-import footerImg from "../assets/Untitled-design-83.png"
+// import footerImg from "../assets/Untitled-design-83.png"
 
 function Footer() {
   const quickLinks = [
@@ -50,12 +50,12 @@ function Footer() {
 
   return (
     <footer
-      className="relative flex flex-col justify-between text-white"
-      style={{
-        backgroundImage: `url(${footerImg})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      className="relative flex flex-col justify-between text-white bg-footer-pattern bg-cover bg-center"
+      // style={{
+      //   backgroundImage: `url(${footerImg})`,
+      //   backgroundSize: "cover",
+      //   backgroundPosition: "center",
+      // }}
     >
       {/* Overlay for transparency */}
       <div className="absolute inset-0 bg-black opacity-70"></div>
