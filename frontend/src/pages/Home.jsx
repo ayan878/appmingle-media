@@ -8,10 +8,13 @@ import Expertteam from "../components/Expertteam";
 import Counting from "../components/Counting";
 import Hero from "../components/Hero";
 import AboutUs from "../components/AboutUs";
-
+import hero from "../assets/11.gif"
 export default function Home() {
   return (
-    <div className="bg-hero bg-contain  bg-no-repeat">
+    <div 
+    // className="bg-hero bg-contain  bg-no-repeat"
+    style={{backgroundImage:`url(${hero})`, backgroundRepeat:"no-repeat",
+    backgroundSize:"contain"}}>
       <div className="flex md:hidden">
         <MobAddressbar />
       </div>
