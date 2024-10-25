@@ -8,7 +8,7 @@ import Expertteam from "../components/Expertteam";
 import Counting from "../components/Counting";
 import Hero from "../components/Hero";
 import AboutUs from "../components/AboutUs";
-import hero from "../assets/11.gif"
+// import hero from "../assets/11.gif"
 export default function Home() {
   return (
     <div 
