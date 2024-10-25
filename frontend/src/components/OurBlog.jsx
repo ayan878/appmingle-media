@@ -2,7 +2,7 @@ import wave from "../assets/wave1.png"
 
 function OurBlog() {
   return (
-    <div className="mx-auto bg-gray-200 h-96 py-12 px-16">
+    <div className="mx-auto bg-gray-200 py-12 px-16">
 
       <img src={wave} alt="wave" className="h-24 w-40 mx-auto" />
       <h1 className="text-3xl  font-bold text-center font-mono mb-2">

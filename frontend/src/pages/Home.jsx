@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import MobAddressbar from "../components/MobAddressbar";
 import AppMingleFamily from "../components/AppMingleFamily";
 import OurBlog from "../components/OurBlog";
+import Expertteam from "../components/Expertteam";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       </div>
       <Addressbar />
       <Header />
+      <Expertteam/>
       <OurBlog/>
       <AppMingleFamily/>
       <Footer />
