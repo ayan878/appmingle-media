@@ -1,7 +1,7 @@
 function Hero() {
   return (
-    <div className="relative -top-20 md:-top-24 flex flex-col items-center py-10 md:px-8">
-      <div className="flex flex-col items-center md:flex-row justify-center gap-4 shadow-lg mb-2">
+    <div className="relative md:top-24 flex flex-col items-center py-10 md:px-8 md:mb-20">
+      <div className="flex flex-col items-center md:flex-row bg-white justify-center gap-4 shadow-lg mb-2">
         <div className="relative video-container w-full md:w-2/3 ">
           <iframe
             src="https://player.vimeo.com/video/235215203"

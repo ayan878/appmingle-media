@@ -12,7 +12,7 @@ import Hero from "../components/Hero";
 export default function Home() {
   return (
     <div
-      className="bg-hero bg-cover h-screen"
+      className="bg-contain bg-hero bg-no-repeat"
     >
       <div className="flex md:hidden">
         <MobAddressbar />
