@@ -14,7 +14,7 @@ function Addressbar() {
   const [showSearch, setShowSearch] = useState(false); 
 
   return (
-    <div className="flex mx-auto py-2 items-center container justify-between bg-yellow-500">
+    <div className="mx-8 flex py-4 items-center justify-between bg-transparent border-b">
       <div className="flex items-center justify-between gap-2">
         <a href="tel:+916203689042" className="flex items-center gap-2 text-xs">
           <IoCall /> +91 6203689042
@@ -43,7 +43,7 @@ function Addressbar() {
             >
               <input
                 type="search"
-                className="bg-transparent w-full focus:outline-none border"
+                className="bg-transparent py-1 w-full focus:outline-none placeholder:text-gray-300"
                 placeholder="Search..."
               />
               <button
