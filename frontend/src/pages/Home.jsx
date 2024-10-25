@@ -1,6 +1,5 @@
 import Addressbar from "../components/Addressbar";
 import Header from "../components/Header";
-import hero from "../assets/11.gif";
 import Footer from "../components/Footer";
 import MobAddressbar from "../components/MobAddressbar";
 import AppMingleFamily from "../components/AppMingleFamily";
