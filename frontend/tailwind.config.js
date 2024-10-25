@@ -5,6 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         "footer-pattern": "url('./src/assets/Untitled-design-83.png')",
+        "hero": "url('./src/assets/11.gif')",
       },
       container: {
         center: true, // Center the container

@@ -12,24 +12,18 @@ import Hero from "../components/Hero";
 export default function Home() {
   return (
     <div
-      className=""
-      style={{
-        backgroundImage: `url(${hero})`,
-        backgroundSize: "cover",
-        height: "100vh",
-      }}
+      className="bg-hero bg-cover h-screen"
     >
-      {/* Mobile Address Bar */}
       <div className="flex md:hidden">
         <MobAddressbar />
       </div>
       <Addressbar />
       <Header />
-      <Hero/>
-      <Counting/>
-      <Expertteam/>
-      <OurBlog/>
-      <AppMingleFamily/>
+      <Hero />
+      <Counting />
+      <Expertteam />
+      <OurBlog />
+      <AppMingleFamily />
       <Footer />
     </div>
   );
