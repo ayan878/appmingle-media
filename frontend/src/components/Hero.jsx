@@ -6,10 +6,10 @@ function Hero() {
   return (
     <div className="flex flex-col mt-[1040px] sm:mt-[360px] lg:mt-[620px] items-center md:px-8">
       <div className="flex flex-col md:flex-row items-center bg-white justify-center gap-4 shadow-lg mb-2">
-        <div className=" video-container w-full md:w-2/3 ">
+        <div className=" video-container w-full md:w-2/3">
           <iframe
             src="https://player.vimeo.com/video/235215203"
-            className="w-full h-80 md:h-60"
+            className="w-full h-80"
             frameBorder="0"
             allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen
