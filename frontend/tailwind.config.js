@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "footer-pattern": "url('../assets/Untitled-design-83.png')",
-        hero: "url('../assets/11.gif')",
+        "footer-pattern": "url('./public/Untitled-design-83.png')",
+        hero: "url('./public/11.gif')",
       },
       container: {
         center: true,
