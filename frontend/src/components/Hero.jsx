@@ -4,7 +4,7 @@ import { PiMicrosoftExcelLogoFill } from "react-icons/pi";
 
 function Hero() {
   return (
-    <div className="flex flex-col mt-[1040px] sm:mt-[360px]  md:mt-88 lg:mt-[620px] items-center md:px-8">
+    <div className="flex flex-col mt-[1040px] sm:mt-[360px] lg:mt-[620px] items-center md:px-8">
       <div className="flex flex-col md:flex-row items-center bg-white justify-center gap-4 shadow-lg mb-2">
         <div className=" video-container w-full md:w-2/3 ">
           <iframe
@@ -18,7 +18,7 @@ function Hero() {
         </div>
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="w-full md:w-2/3 p-4 space-y-3">
-            <div className="flex gap-2">
+            <div className="flex gap-2 items-center mx-auto justify-center md:justify-start">
               <FaLaptopCode className="w-8 h-8 text-blue-400" />
               <h1 className="text-xl text-center md:text-left font-bold">
                 Website Development
@@ -35,7 +35,7 @@ function Hero() {
             </p>
           </div>
           <div className="w-full md:w-2/3 p-4 space-y-3">
-            <div className="flex gap-2">
+            <div className="flex gap-2 items-center mx-auto justify-center md:justify-start">
               <TbDeviceMobileCode className="w-8 h-8 text-blue-400" />
               <h1 className="text-xl text-center md:text-left font-bold">
                 Mobile App Development
@@ -55,7 +55,7 @@ function Hero() {
       </div>
       <div className="flex flex-col flex-nowwrap md:flex-row justify-center py-8 gap-4 shadow-lg">
         <div className="w-full md:w-1/3 p-4 space-y-3">
-          <div className="flex gap-2">
+          <div className="flex gap-2 items-center mx-auto justify-center md:justify-start">
             <FaLaptopCode className="w-8 h-8 text-blue-400" />
             <h1 className="text-xl text-center md:text-left font-bold">
               Digital Marketing
@@ -72,7 +72,7 @@ function Hero() {
           </p>
         </div>
         <div className="w-full md:w-1/3 p-4 space-y-4">
-          <div className="flex gap-2">
+          <div className="flex gap-2 items-center mx-auto justify-center md:justify-start">
             <FaLaptopCode className="w-8 h-8 text-blue-400" />
             <h1 className="text-xl text-center md:text-left font-bold">SEO</h1>
           </div>
@@ -87,12 +87,12 @@ function Hero() {
           </p>
         </div>
         <div className="w-full md:w-1/3 p-4 space-y-3">
-        <div className="flex gap-2">
-          <PiMicrosoftExcelLogoFill className="w-8 h-8 text-blue-400" />
-          <h1 className="text-xl text-center md:text-left font-bold">
-            CRM & ERP
-          </h1>
-        </div>
+          <div className="flex gap-2 items-center mx-auto justify-center md:justify-start">
+            <PiMicrosoftExcelLogoFill className="w-8 h-8 text-blue-400" />
+            <h1 className="text-xl text-center md:text-left font-bold">
+              CRM & ERP
+            </h1>
+          </div>
           <p className="text-center md:text-left">
             CRM manages customer relations; ERP integrates business processes
             efficiently.
