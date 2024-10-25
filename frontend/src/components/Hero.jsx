@@ -1,7 +1,7 @@
 function Hero() {
   return (
     <div className="flex flex-col mt-[1050px] sm:mt-[400px]  md:mt-88 lg:mt-[620px] items-center md:px-8">
-      <div className="flex flex-col items-center md:flex-row bg-white justify-center gap-4 shadow-lg mb-2">
+      <div className="flex flex-col md:flex-row items-center bg-white justify-center gap-4 shadow-lg mb-2">
         <div className=" video-container w-full md:w-2/3 ">
           <iframe
             src="https://player.vimeo.com/video/235215203"
@@ -12,7 +12,7 @@ function Hero() {
             title="Vimeo Video"
           ></iframe>
         </div>
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="w-full md:w-2/3 p-4 space-y-3">
             <h1 className="text-xl font-bold">Website Development</h1>
             <p>
@@ -39,7 +39,7 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="flex flex-nowwrap md:flex-row justify-center py-8 gap-4 shadow-lg">
+      <div className="flex flex-col flex-nowwrap md:flex-row justify-center py-8 gap-4 shadow-lg">
         <div className="w-full md:w-1/3 p-4 space-y-3">
           <h1 className="text-xl font-bold">Digital Marketing</h1>
           <p>
