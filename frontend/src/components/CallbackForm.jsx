@@ -109,6 +109,10 @@ function CallbackForm() {
     const timer = setTimeout(() => {
       setIsModalOpen(true);
     }, 10000);
+
+   if(document.readyState=='complete'){
+    setIsLoading(false)
+   }
     const handlePageLoad = () => {
       setIsLoading(false);
     };
@@ -116,8 +120,6 @@ function CallbackForm() {
     window.addEventListener("load", handlePageLoad);
     return () => {
       clearTimeout(timer);
-      // it is use here just cuz loader is showing on android and window removeEventListener not work android
-      setIsLoading(false);
       window.removeEventListener("load", handlePageLoad);
     };
   }, []);
