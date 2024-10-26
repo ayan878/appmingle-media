@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { IoClose } from "react-icons/io5";
+import preloader from "../assets/preloader1.gif"; 
 
 function CallbackForm() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  const [isLoading, setIsLoading] = useState(true);
 
   const closeModal = () => {
     setIsModalOpen(false);
@@ -11,12 +12,20 @@ function CallbackForm() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
+      setIsLoading(false);
       setIsModalOpen(true);
     }, 5000);
 
     return () => clearTimeout(timer);
   }, []);
 
+  if (isLoading) {
+    return (
+      <div className="flex items-center justify-center h-screen bg-white">
+        <img src={preloader} alt="loading..." className="w-16 h-16" />
+      </div>
+    );
+  }
 
   if (!isModalOpen) return null;
 
@@ -41,17 +50,17 @@ function CallbackForm() {
             Challenge, Call Back in 2 minutes
           </h1>
           <input
-            className="rounded-lg max-auto bg-transparent border py-1 px-2 w-72 placeholder:text-zinc-300"
+            className="rounded-lg bg-transparent border py-1 px-2 w-72 placeholder:text-zinc-300"
             placeholder="Name*"
           />
           <input
             type="text"
-            className="rounded-lg max-auto bg-transparent border py-1 px-2 w-72 placeholder:text-zinc-300"
+            className="rounded-lg bg-transparent border py-1 px-2 w-72 placeholder:text-zinc-300"
             placeholder="Phone Number*"
           />
           <input
             type="text"
-            className="rounded-lg max-auto bg-transparent border py-1 px-2 w-72 placeholder:text-zinc-300"
+            className="rounded-lg bg-transparent border py-1 px-2 w-72 placeholder:text-zinc-300"
             placeholder="Email"
           />
           <select className="w-72 bg-transparent border rounded-lg py-2 text-white">
