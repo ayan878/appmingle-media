@@ -117,7 +117,7 @@ function AppMingleServices() {
         {services.map((service, index) => (
           <div
             className={`border overflow-hidden shadow-lg pb-4 space-y-4 ${
-              index%2 === 1 ? "" : ""
+              index % 2 === 1 ? "" : ""
             }`}
             key={service.title}
           >
@@ -129,7 +129,7 @@ function AppMingleServices() {
             <h2 className="text-xl text-center font-Merri font-semibold mt-2">
               {service.title}
             </h2>
-            <p className="text-sm text-gray-600 mt-1 px-4">{service.desc}</p>
+            <p className="text-sm text-center text-gray-600 mt-1 px-4">{service.desc}</p>
             <button className="flex items-center justify-center text-blue-400 px-4 py-2 mt-4 mx-auto hover:bg-blue-500 transition">
               {service.button}
             </button>
