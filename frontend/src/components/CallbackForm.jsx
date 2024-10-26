@@ -28,7 +28,7 @@ function CallbackForm() {
         onClick={closeModal}
       ></div>
 
-      <form className="relative flex flex-col h-[400px] w-96 gap-6 bg-sky-500 border-2 border-white mt-24 items-center justify-center mx-auto">
+      <form className="relative flex flex-col h-[400px] w-96 gap-6 bg-sky-500 mt-24 items-center justify-center mx-auto">
         <div className="relative border-2 w-[350px] h-[370px] p-8 flex flex-col items-center justify-center mx-auto gap-4 rounded-md shadow-2xl">
           <button
             type="button"
