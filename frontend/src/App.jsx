@@ -4,10 +4,13 @@ import About from "./pages/About";
 import Service from "./pages/Service";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import CallbackForm from "./components/CallbackForm";
+
 
 function App() {
   return (
     <div>
+      <CallbackForm/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<About />} />
