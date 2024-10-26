@@ -116,6 +116,8 @@ function CallbackForm() {
     window.addEventListener("load", handlePageLoad);
     return () => {
       clearTimeout(timer);
+      // it is use here just cuz loader is showing on android and window removeEventListener not work android
+      setIsLoading(false);
       window.removeEventListener("load", handlePageLoad);
     };
   }, []);
