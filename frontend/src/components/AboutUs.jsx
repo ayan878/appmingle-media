@@ -6,14 +6,14 @@ import image2 from "../assets/Untitled-design-76.png";
 
 function AboutUs() {
   return (
-    <div className="flex flex-col  md:flex-row mt-8 mx-8">
+    <div className="flex flex-col  lg:flex-row mt-8 mx-8">
       <div className="bg-white py-2 px-4 md:px-20 lg:max-w-4xl">
         <img
           src={wave}
           alt="wave"
-          className="mx-auto md:ml-0 h-24 w-28 md:w-40"
+          className="mx-auto lg:ml-0 h-24 w-28 md:w-40"
         />
-        <h1 className="text-3xl text-center font-bold md:text-start font-mono mb-4">
+        <h1 className="text-3xl text-center font-bold lg:text-start font-mono mb-4">
           About Us
         </h1>
         <p className="text-center md:text-start font-serif mb-4 text-gray-700">
@@ -74,7 +74,7 @@ function AboutUs() {
       <div>
         <div className="relative">
           <img src={image1} className="w-full md:w-64 mb-64 sm:mb-0" />
-          <div className="absolute top-80 left-12 right-12 sm:right-0 md:top-0 md:left-1/2 z-30 bg-blue-500 text-white p-6 justify-between border-8 md:border-r-0 md:border-t-0 border-white">
+          <div className="absolute top-80 left-12 right-12 md:right-0 md:top-0 md:left-1/2 z-30 bg-blue-500 text-white p-6 justify-between border-8 md:border-r-0 md:border-t-0 border-white">
             <div className="space-y-6">
               <div className="space-y-2">
                 <h3 className="text-lg font-semibold flex items-center">
