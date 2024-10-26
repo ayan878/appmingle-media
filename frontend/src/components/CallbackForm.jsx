@@ -116,6 +116,7 @@ function CallbackForm() {
     window.addEventListener("load", handlePageLoad);
     return () => {
       clearTimeout(timer);
+      setIsLoading(false);
       window.removeEventListener("load", handlePageLoad);
     };
   }, []);
