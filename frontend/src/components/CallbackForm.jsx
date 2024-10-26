@@ -96,6 +96,7 @@
 import { useEffect, useState } from "react";
 import { IoClose } from "react-icons/io5";
 import preloader from "../assets/preloader1.gif";
+import { BiSolidPhoneCall } from "react-icons/bi";
 
 function CallbackForm() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -110,9 +111,9 @@ function CallbackForm() {
       setIsModalOpen(true);
     }, 10000);
 
-   if(document.readyState=='complete'){
-    setIsLoading(false)
-   }
+    if (document.readyState == "complete") {
+      setIsLoading(false);
+    }
     const handlePageLoad = () => {
       setIsLoading(false);
     };
@@ -136,7 +137,7 @@ function CallbackForm() {
 
   return (
     <>
-      {isLoading && (
+      {!isLoading && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
           {/* Overlay */}
           <div
@@ -170,7 +171,7 @@ function CallbackForm() {
                 className="rounded-lg bg-transparent border py-1 px-2 w-72 placeholder:text-zinc-300"
                 placeholder="Email"
               />
-              <select className="w-72 bg-transparent border rounded-lg py-2 text-white">
+              <select className="w-72 bg-transparent border rounded-lg py-2 px-1 text-white">
                 <option className="text-black">Select Service</option>
                 <option className="text-black">Web Development</option>
                 <option className="text-black">Website Design</option>
@@ -179,9 +180,10 @@ function CallbackForm() {
                 <option className="text-black">SEO</option>
                 <option className="text-black">CRM and ERP Development</option>
               </select>
-              <button className="bg-red-600 py-2 px-2 w-72 rounded-lg text-white font-medium">
-                Get Call Back in 2 minutes
-              </button>
+              <div className="flex items-center justify-center gap-2 bg-red-600 py-2 px-2 w-72 rounded-lg text-white font-medium">
+                <BiSolidPhoneCall />
+                <a href="tel:+91 6203689042">Get Call Back in 2 minutes</a>
+              </div>
             </div>
           </form>
         </div>
