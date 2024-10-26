@@ -95,7 +95,7 @@
 
 import { useEffect, useState } from "react";
 import { IoClose } from "react-icons/io5";
-import preloader from "../assets/preloader1.gif"
+import preloader from "../assets/preloader1.gif";
 
 function CallbackForm() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -106,13 +106,18 @@ function CallbackForm() {
   };
 
   useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsModalOpen(true);
+    }, 5000);
     const handlePageLoad = () => {
-      setIsLoading(false); 
-      setIsModalOpen(true); 
+      setIsLoading(false);
     };
 
     window.addEventListener("load", handlePageLoad);
-    return () => window.removeEventListener("load", handlePageLoad);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("load", handlePageLoad);
+    };
   }, []);
 
   if (isLoading) {
