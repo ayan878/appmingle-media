@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        Merri: ["Merriweather", "sans-serif"],
+      },
       backgroundImage: {
         "footer-pattern": "url('/Untitled-design-83.png')",
         hero: "url('/11.gif')",

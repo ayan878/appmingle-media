@@ -9,6 +9,7 @@ import Counting from "../components/Counting";
 import Hero from "../components/Hero";
 import AboutUs from "../components/AboutUs";
 import AppMingleMedia from "../components/AppMingleMedia";
+import AppMingleServices from "../components/AppMingleServices";
 // import hero from "../assets/11.gif"
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <Hero />
       <AboutUs />
       <AppMingleMedia/>
+      <AppMingleServices/>
       <Counting />
       <Expertteam />
       <OurBlog />
