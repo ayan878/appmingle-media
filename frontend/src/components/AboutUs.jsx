@@ -6,7 +6,7 @@ import image2 from "../assets/Untitled-design-76.png";
 
 function AboutUs() {
   return (
-    <div className="flex flex-col  lg:flex-row mt-8 mx-8">
+    <div className="flex flex-col  lg:flex-row mt-8 lg:mx-8 mb-4">
       <div className="bg-white py-2 px-4 md:px-20 lg:max-w-4xl">
         <img
           src={wave}
@@ -72,9 +72,9 @@ function AboutUs() {
         </div>
       </div>
       <div>
-        <div className="relative">
+        <div className="relative mx-auto w-11/12 sm:w-4/5  lg:w-full">
           <img src={image1} className="w-full md:w-64 mb-64 sm:mb-0" />
-          <div className="absolute top-80 left-12 right-12 md:right-0 md:top-0 md:left-1/2 z-30 bg-blue-500 text-white p-6 justify-between border-8 md:border-r-0 md:border-t-0 border-white">
+          <div className="absolute top-[380px] left-12 right-12 md:right-0 md:top-0 md:left-1/2 z-30 bg-blue-500 text-white p-6 justify-between border-8 md:border-r-0 md:border-t-0 border-white">
             <div className="space-y-6">
               <div className="space-y-2">
                 <h3 className="text-lg font-semibold flex items-center">
@@ -101,7 +101,7 @@ function AboutUs() {
             </div>
           </div>
         </div>
-        <img src={image2} />
+        <img src={image2} className="w-11/12 sm:w-4/5 lg:w-full mx-auto"/>
       </div>
     </div>
   );
