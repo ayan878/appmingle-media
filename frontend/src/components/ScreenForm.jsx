@@ -26,8 +26,8 @@ function ScreenForm() {
 
   const onSubmit = () => {};
   return (
-    <form className="flex flex-col h-[400px] w-96 gap-6 mt-20 items-center justify-center ml-[790px]">
-      <h1 className="text-blue-400 text-md">
+    <form className="absolute flex flex-col lg:h-[400px] md:w-60 lg:w-96 gap-3 lg:gap-6 mt-[640px] md:mt-0 lg:mt-20 items-center justify-center ml-20 md:ml-[540px] lg:ml-[790px]">
+      <h1 className="text-blue-400 text-md md:text-xs lg:text-lg ">
         Challenge, Call Back in 2 minutes
       </h1>
       <input
@@ -35,7 +35,7 @@ function ScreenForm() {
         name="name"
         value={formData.name}
         onChange={handleChange}
-        className="rounded-lg bg-transparent border py-1 px-2 w-72 placeholder:text-zinc-500"
+        className="rounded-lg bg-transparent md:h-8 lg:h-10 border py-1 px-2 w-64 md:w-48 lg:w-72 placeholder:text-zinc-500 placeholder:text-xs lg:placeholder:text-base"
         placeholder="Name*"
         required
       />
@@ -44,7 +44,7 @@ function ScreenForm() {
         value={formData.phone}
         name="phone"
         onChange={handleChange}
-        className="rounded-lg bg-transparent border py-1 px-2 w-72 placeholder:text-zinc-500"
+        className="rounded-lg bg-transparent md:h-8 lg:h-10 border py-1 px-2 w-64 md:w-48 lg:w-72 placeholder:text-zinc-500 placeholder:text-xs lg:placeholder:text-base"
         placeholder="Phone Number*"
         required
       />
@@ -53,14 +53,14 @@ function ScreenForm() {
         name="email"
         value={formData.email}
         onChange={handleChange}
-        className="rounded-lg bg-transparent border py-1 px-2 w-72 placeholder:text-zinc-500"
+        className="rounded-lg bg-transparent md:h-8 lg:h-10 border py-1 px-2 w-64 md:w-48 lg:w-72 placeholder:text-zinc-500 placeholder:text-xs lg:placeholder:text-base"
         placeholder="Email"
       />
       <select
         name="service"
         onChange={handleChange}
         value={formData.service}
-        className="w-72 bg-transparent border rounded-lg py-2 text-zinc-500 "
+        className="rounded-lg bg-transparent text-xs lg:text-base h-8 lg:h-10 border py-1 px-2 w-64 md:w-48 lg:w-72 text-zinc-500"
       >
         <option className="text-black" value="">
           Select Service
@@ -86,11 +86,11 @@ function ScreenForm() {
       </select>
       <button
         type="submit"
-        className="flex items-center justify-center gap-1 bg-sky-600 py-2 px-2 w-72 rounded-lg text-white font-medium"
+        className="flex items-center justify-center text-xs lg:text-base gap-1 bg-sky-600 py-2 px-2 w-64 md:w-48 lg:w-72 rounded-lg text-white font-medium"
       >
         <BiSolidPhoneCall /> Get Call Back in 2 minutes
       </button>
-      <div className="flex items-center justify-between w-72 gap-2 -mt-2">
+      <div className="flex items-center justify-between w-64 md:w-48 text-xs lg:text-base lg:w-72 gap-2 md:-mt-2">
         <p className="bg-red-600 text-center w-full py-2 px-2 rounded-lg text-white font-medium">
           <a href="tel:+916203689042">Call Now</a>
         </p>
