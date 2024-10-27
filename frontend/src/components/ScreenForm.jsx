@@ -24,7 +24,7 @@ function ScreenForm() {
     }));
   };
 
-
+  const onSubmit = () => {};
   return (
     <form className="flex flex-col h-[400px] w-96 gap-6 mt-20 items-center justify-center ml-[790px]">
       <h1 className="text-blue-400 text-md">
@@ -90,7 +90,7 @@ function ScreenForm() {
       >
         <BiSolidPhoneCall /> Get Call Back in 2 minutes
       </button>
-      <div className="flex items-center justify-between w-72 gap-2">
+      <div className="flex items-center justify-between w-72 gap-2 -mt-2">
         <p className="bg-red-600 text-center w-full py-2 px-2 rounded-lg text-white font-medium">
           <a href="tel:+916203689042">Call Now</a>
         </p>
