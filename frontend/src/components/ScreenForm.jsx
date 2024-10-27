@@ -1,36 +1,67 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { BiSolidPhoneCall } from "react-icons/bi";
+import Context from "./ContextProvider";
 
 function ScreenForm() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const { setIsModalOpen } = useContext(Context);
+
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    service: "",
+  });
 
   const handleModal = () => {
-    setIsModalOpen(false);
+    setIsModalOpen(true);
   };
 
-  if (!isModalOpen) return null;
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
 
   return (
-    <form className="flex flex-col h-[400px] w-96 gap-6 bg-sky-500 mt-24 items-center justify-center mx-auto">
-      <h1 className="text-white text-md">Challenge, Call Back in 2 minutes</h1>
+    <form className="flex flex-col h-[400px] w-96 gap-6 mt-20 items-center justify-center ml-[790px]">
+      <h1 className="text-blue-400 text-md">
+        Challenge, Call Back in 2 minutes
+      </h1>
       <input
         type="text"
-        className="rounded-lg bg-transparent border py-1 px-2 w-72 placeholder:text-zinc-300"
+        name="name"
+        value={formData.name}
+        onChange={handleChange}
+        className="rounded-lg bg-transparent border py-1 px-2 w-72 placeholder:text-zinc-500"
         placeholder="Name*"
         required
       />
       <input
         type="tel"
-        className="rounded-lg bg-transparent border py-1 px-2 w-72 placeholder:text-zinc-300"
+        value={formData.phone}
+        name="phone"
+        onChange={handleChange}
+        className="rounded-lg bg-transparent border py-1 px-2 w-72 placeholder:text-zinc-500"
         placeholder="Phone Number*"
         required
       />
       <input
         type="email"
-        className="rounded-lg bg-transparent border py-1 px-2 w-72 placeholder:text-zinc-300"
+        name="email"
+        value={formData.email}
+        onChange={handleChange}
+        className="rounded-lg bg-transparent border py-1 px-2 w-72 placeholder:text-zinc-500"
         placeholder="Email"
       />
-      <select className="w-72 bg-transparent border rounded-lg py-2 text-white">
+      <select
+        name="service"
+        onChange={handleChange}
+        value={formData.service}
+        className="w-72 bg-transparent border rounded-lg py-2 text-zinc-500 "
+      >
         <option className="text-black" value="">
           Select Service
         </option>
@@ -55,17 +86,17 @@ function ScreenForm() {
       </select>
       <button
         type="submit"
-        className="bg-sky-600 py-2 px-2 w-72 rounded-lg text-white font-medium"
+        className="flex items-center justify-center gap-1 bg-sky-600 py-2 px-2 w-72 rounded-lg text-white font-medium"
       >
         <BiSolidPhoneCall /> Get Call Back in 2 minutes
       </button>
-      <div>
-        <p className="bg-red-600 py-2 px-2 w-72 rounded-lg text-white font-medium">
+      <div className="flex items-center justify-between w-72 gap-2">
+        <p className="bg-red-600 text-center w-full py-2 px-2 rounded-lg text-white font-medium">
           <a href="tel:+916203689042">Call Now</a>
         </p>
         <button
           type="button"
-          className="bg-red-600 py-2 px-2 w-72 rounded-lg text-white font-medium"
+          className="bg-red-600 w-full mx-auto py-2 px-2 rounded-lg text-white font-medium"
           onClick={handleModal}
         >
           Contact Us

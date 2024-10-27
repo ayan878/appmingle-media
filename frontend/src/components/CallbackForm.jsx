@@ -93,13 +93,14 @@
 
 // export default CallbackForm;
 
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { IoClose } from "react-icons/io5";
 import preloader from "../assets/preloader1.gif";
 import { BiSolidPhoneCall } from "react-icons/bi";
+import Context from "./ContextProvider";
 
 function CallbackForm() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const {isModalOpen, setIsModalOpen} = useContext(Context);
   const [isLoading, setIsLoading] = useState(true);
 
   const closeModal = () => {

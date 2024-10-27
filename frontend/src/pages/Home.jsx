@@ -10,9 +10,11 @@ import Hero from "../components/Hero";
 import AboutUs from "../components/AboutUs";
 import AppMingleMedia from "../components/AppMingleMedia";
 import AppMingleServices from "../components/AppMingleServices";
+
 import ScreenForm from "../components/ScreenForm";
 // import hero from "../assets/11.gif"
 export default function Home() {
+  
   return (
     <div
       // className="bg-hero bg-cover sm:h-screen md:h-auto md:bg-contain  md:bg-no-repeat "
@@ -23,9 +25,9 @@ export default function Home() {
       <div className="flex md:hidden">
         <MobAddressbar />
       </div>
-      <ScreenForm />
       <Addressbar />
       <Header />
+      <ScreenForm/>
       <Hero />
       <AboutUs />
       <AppMingleMedia />
@@ -38,3 +40,4 @@ export default function Home() {
     </div>
   );
 }
+
