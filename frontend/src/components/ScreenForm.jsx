@@ -50,7 +50,7 @@ function ScreenForm() {
   };
 
   return (
-    <form className="absolute flex flex-col lg:h-[400px] md:w-60 lg:w-96 gap-3 lg:gap-6 mt-[640px] md:mt-0 lg:mt-20 items-center justify-center ml-20 md:ml-[540px] lg:ml-[790px] md:bg-red-500 lg:bg-gray-500">
+    <form className="absolute flex flex-col lg:h-[400px] md:w-60 lg:w-96 gap-3 lg:gap-6 mt-[640px] md:mt-4 lg:mt-20 items-center justify-center ml-20 md:ml-[540px] lg:ml-[790px]">
       <h1 className="text-blue-400 text-md md:text-xs lg:text-lg ">
         Challenge, Call Back in 2 minutes
       </h1>
@@ -122,7 +122,7 @@ function ScreenForm() {
       </button>
       {isSubmit ? (
         <p className="text-lg md:text-sm lg:text-xl">
-          Your submission is successful.
+          {responseMessage}
         </p>
       ) : (
         ""
