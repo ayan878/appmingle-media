@@ -1,6 +1,6 @@
 const quote = async (formData) => {
   try {
-    const response = await fetch("http://192.168.0.106:3000", {
+    const response = await fetch("http://localhost:3000", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
