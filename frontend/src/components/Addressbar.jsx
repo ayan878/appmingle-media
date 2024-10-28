@@ -16,12 +16,15 @@ function Addressbar() {
   return (
     <div className="hidden mx-8 py-4 items-center justify-between bg-transparent border-b md:flex">
       <div className="flex items-center justify-between gap-2">
-        <a href="tel:+916203689042" className="flex items-center gap-2 text-xs">
+        <a
+          href="tel:+916203689042"
+          className="flex items-center gap-2 text-xs hover:text-sky-800"
+        >
           <IoCall /> +91 6203689042
         </a>
         <a
           href="mailto:info@appminglemedia.com"
-          className="flex items-center gap-2 text-xs"
+          className="flex items-center gap-2 text-xs hover:text-sky-800"
         >
           <IoMail /> info@appminglemedia.com
         </a>
@@ -35,11 +38,11 @@ function Addressbar() {
         {showSearch ? (
           <div className="flex items-center w-full">
             <div
-            className={`flex items-center justify-between gap-2 rounded-lg border ${
-              showSearch
-                ? "flex bg-transparent w-full md:w-72 px-2"
-                : "w-8 border-none"
-            } transition-all duration-100 focus:outline-none`}
+              className={`flex items-center justify-between gap-2 rounded-lg border ${
+                showSearch
+                  ? "flex bg-transparent w-full md:w-72 px-2"
+                  : "w-8 border-none"
+              } transition-all duration-100 focus:outline-none`}
             >
               <input
                 type="search"

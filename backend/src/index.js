@@ -16,10 +16,9 @@ mongoose
   .then(
     app.listen(3000, (req, res) => {
       console.log(`server is started on http://localhost:3000`);
+      app.use(router);
     })
   )
   .catch((error) => {
     console.error(error);
   });
-
-app.use(router);

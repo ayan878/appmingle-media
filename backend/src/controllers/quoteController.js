@@ -13,12 +13,14 @@ const quotes = async (req, res) => {
 
     const savedQuote = await quote.save();
     res.status(201).json({
+      success: true,
       message: "Quotation sent successfully",
       quote: savedQuote,
     });
   } catch (error) {
     console.error("Error saving quote:", error);
     res.status(500).json({
+      success: false, 
       message: "Internal server error",
     });
   }
