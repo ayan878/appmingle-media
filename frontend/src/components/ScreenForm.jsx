@@ -113,10 +113,14 @@ function ScreenForm() {
         onClick={onSubmit}
         className="flex items-center justify-center text-xs lg:text-base gap-1 bg-sky-600 py-2 px-2 w-64 md:w-48 lg:w-72 rounded-lg text-white font-medium"
       >
-        {isLoading ? <Circles className="h-6 w-6"/> : <BiSolidPhoneCall />}
+        {isLoading ? (
+          <Circles className="h-4 w-4 lg:h-6 lg:w-6" />
+        ) : (
+          <BiSolidPhoneCall />
+        )}
         Get Call Back in 2 minutes
       </button>
-      {isSubmit ? "Your submission is successful." : ""}
+      {isSubmit ? <p className="text-lg md:text-sm lg:text-xl">Your submission is successful.</p> : ""}
       <div className="flex items-center justify-between w-64 md:w-48 text-xs lg:text-base lg:w-72 gap-2 md:-mt-2">
         <p className="bg-red-600 text-center w-full py-2 px-2 rounded-lg text-white font-medium">
           <a href="tel:+916203689042">Call Now</a>
