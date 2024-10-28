@@ -1,22 +1,22 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { BiSolidPhoneCall } from "react-icons/bi";
-import Context from "./ContextProvider";
+import Context from "../context/ContextProvider";
 import quote from "../api/quoteApi";
 import { Circles } from "react-loading-icons";
 
-
 function ScreenForm() {
-  const { setIsModalOpen } = useContext(Context);
-  const [responseMessage, setResponseMessage] = useState("");
-  const [isSubmit, setIsSubmit] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
+  const {
+    setIsModalOpen,
+    formData,
+    setFormData,
+    isLoading,
+    setIsLoading,
+    responseMessage,
+    setResponseMessage,
+    isSubmit,
+    setIsSubmit,
+  } = useContext(Context);
 
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    service: "",
-  });
 
   const handleModal = () => {
     setIsModalOpen(true);
@@ -30,7 +30,7 @@ function ScreenForm() {
     }));
   };
 
-  const onSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
     try {
@@ -110,7 +110,7 @@ function ScreenForm() {
       </select>
       <button
         type="submit"
-        onClick={onSubmit}
+        onClick={handleSubmit}
         className="flex items-center justify-center text-xs lg:text-base gap-1 bg-sky-600 py-2 px-2 w-64 md:w-48 lg:w-72 rounded-lg text-white font-medium"
       >
         {isLoading ? (
@@ -120,7 +120,13 @@ function ScreenForm() {
         )}
         Get Call Back in 2 minutes
       </button>
-      {isSubmit ? <p className="text-lg md:text-sm lg:text-xl">Your submission is successful.</p> : ""}
+      {isSubmit ? (
+        <p className="text-lg md:text-sm lg:text-xl">
+          Your submission is successful.
+        </p>
+      ) : (
+        ""
+      )}
       <div className="flex items-center justify-between w-64 md:w-48 text-xs lg:text-base lg:w-72 gap-2 md:-mt-2">
         <p className="bg-red-600 text-center w-full py-2 px-2 rounded-lg text-white font-medium">
           <a href="tel:+916203689042">Call Now</a>
