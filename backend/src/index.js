@@ -8,15 +8,20 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://appmingle-media.vercel.app", "http://localhost:5173"],
+  })
+);
+
 app.use(express.json());
+app.use(router);
 const mongodb_uri = process.env.MONGODB_URI;
 mongoose
   .connect(mongodb_uri)
   .then(
     app.listen(3000, (req, res) => {
       console.log(`server is started on http://localhost:3000`);
-      app.use(router);
     })
   )
   .catch((error) => {
