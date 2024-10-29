@@ -29,7 +29,6 @@
 
 // export default quotes;
 
-
 const quotes = async (req, res) => {
   console.log("Received request:", req.body);
   try {
@@ -52,3 +51,5 @@ const quotes = async (req, res) => {
     res.status(500).json({ success: false, message: "Internal server error" });
   }
 };
+
+export default quotes;
