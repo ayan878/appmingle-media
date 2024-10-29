@@ -17,16 +17,13 @@ app.use(
   })
 );
 
-// Middleware for parsing JSON
 app.use(express.json());
 app.use(router);
 
-
-// MongoDB URI from environment variables
+// MongoDB connection and server start
 const mongodb_uri = process.env.MONGODB_URI;
 const PORT = process.env.PORT || 3000;
 
-// MongoDB connection with additional options
 mongoose
   .connect(mongodb_uri)
   .then(() => {
@@ -38,8 +35,5 @@ mongoose
     console.error("MongoDB connection error:", error);
   });
 
-// Error handling middleware for uncaught errors
-app.use((err, req, res, next) => {
-  console.error("Unhandled error:", err);
-  res.status(500).json({ error: "Internal Server Error" });
-});
+// Export the Express app for Vercel
+export default app; 
