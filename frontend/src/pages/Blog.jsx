@@ -1,7 +1,11 @@
+import Login from "../components/login";
+
 function Blog() {
   return (
-    <div>Blog</div>
-  )
+    <div>
+      <Login />
+    </div>
+  );
 }
 
-export default Blog
+export default Blog;
