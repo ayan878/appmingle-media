@@ -10,7 +10,8 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["https://appmingle-media.vercel.app", "http://localhost:5173"],
+    origin: "https://appmingle-media.vercel.app",
+    credentials: true,
   })
 );
 
