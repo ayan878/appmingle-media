@@ -11,9 +11,8 @@ const app = express();
 // CORS setup
 app.use(
   cors({
-    origin: [
-      "https://appmingle-media.vercel.app",
-    ]
+    origin: ["https://appmingle-media.vercel.app"],
+    methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
 
@@ -25,6 +24,11 @@ app.use(router);
 app.get("/", (req, res) => {
   res.status(200).json("Welcome, your app is working well");
 });
+
+app.post("/test", (req, res) => {
+  res.status(200).json({ success: true, message: "Test successful!" });
+});
+
 
 const PORT = process.env.PORT || 3000; 
 const mongodb_uri = process.env.MONGODB_URI;
