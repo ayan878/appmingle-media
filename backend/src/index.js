@@ -11,7 +11,10 @@ const app = express();
 // CORS setup
 app.use(
   cors({
-    origin: "https://appmingle-media.vercel.app",
+    origin: [
+      "https://appmingle-media.vercel.app",
+      "https://appmingle-media-backend.vercel.app",
+    ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
