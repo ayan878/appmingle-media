@@ -17,7 +17,10 @@ app.use(
 app.use(express.json());
 app.use(router);
 
-const PORT=process.env.PORT
+app.get("/", (req, res) => {
+  res.status(200).json("Welcome, your app is working well");
+});
+const PORT = process.env.PORT;
 const mongodb_uri = process.env.MONGODB_URI;
 mongoose
   .connect(mongodb_uri)
