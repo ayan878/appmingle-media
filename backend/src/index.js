@@ -21,10 +21,6 @@ app.use(
 app.use(express.json());
 app.use(router);
 
-// Root route for basic response check
-app.get("/", (req, res) => {
-  res.status(200).json("Welcome, your app is working well");
-});
 
 // MongoDB URI from environment variables
 const mongodb_uri = process.env.MONGODB_URI;
