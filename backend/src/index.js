@@ -19,6 +19,15 @@ app.use(
 app.use(express.json());
 app.use(router);
 
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*"); // Adjust this to your frontend's URL
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  next();
+});
+
 app.use((err, req, res, next) => {
   console.error("Unhandled error:", err);
   res.status(500).json({
