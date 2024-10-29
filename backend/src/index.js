@@ -8,14 +8,11 @@ dotenv.config();
 
 const app = express();
 
-// app.use(
-//   cors({
-//     origin: ["https://appmingle-media.vercel.app", "http://localhost:5173"],
-//   })
-// );
-
-app.use(cors({ origin: "*" }));
-
+app.use(
+  cors({
+    origin: ["https://appmingle-media.vercel.app", "http://localhost:5173"],
+  })
+);
 
 app.use(express.json());
 app.use(router);
