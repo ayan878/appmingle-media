@@ -13,27 +13,24 @@ app.use(
   cors({
     origin: ["https://appmingle-media.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials:true,
+    credentials: true,
   })
 );
 
-// Middleware
+// Middleware for parsing JSON
 app.use(express.json());
 app.use(router);
 
-// Root route
+// Root route for basic response check
 app.get("/", (req, res) => {
   res.status(200).json("Welcome, your app is working well");
 });
 
-app.post("/test", (req, res) => {
-  res.status(200).json({ success: true, message: "Test successful!" });
-});
-
-
-const PORT = process.env.PORT || 3000; 
+// MongoDB URI from environment variables
 const mongodb_uri = process.env.MONGODB_URI;
+const PORT = process.env.PORT || 3000;
 
+// MongoDB connection with additional options
 mongoose
   .connect(mongodb_uri)
   .then(() => {
@@ -45,8 +42,8 @@ mongoose
     console.error("MongoDB connection error:", error);
   });
 
-// Error handling middleware
+// Error handling middleware for uncaught errors
 app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send("Something went wrong!");
+  console.error("Unhandled error:", err);
+  res.status(500).json({ error: "Internal Server Error" });
 });
