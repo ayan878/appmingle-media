@@ -19,6 +19,15 @@ app.use(
 app.use(express.json());
 app.use(router);
 
+app.use((err, req, res, next) => {
+  console.error("Unhandled error:", err);
+  res.status(500).json({
+    error: "Internal Server Error",
+    details: err.message,
+  });
+});
+
+
 // MongoDB connection and server start
 const mongodb_uri = process.env.MONGODB_URI;
 const PORT = process.env.PORT || 3000;
