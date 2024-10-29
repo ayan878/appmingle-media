@@ -24,7 +24,7 @@ const mongodb_uri = process.env.MONGODB_URI;
 const PORT = process.env.PORT || 3000;
 
 mongoose
-  .connect(`${mongodb_uri}`)
+  .connect(mongodb_uri)
   .then(() => {
     app.listen(PORT, () => {
       console.log(`Server is started on http://localhost:${PORT}`);
@@ -35,4 +35,4 @@ mongoose
   });
 
 // Export the Express app for Vercel
-export default app; 
+export default app;

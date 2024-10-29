@@ -9,6 +9,6 @@ const postsSchema = mongoose.Schema({
   },
 });
 
-const postsModel = mongoose.model("login", postsSchema);
+const postsModel = mongoose.model("posts", postsSchema);
 
 export default postsModel;
