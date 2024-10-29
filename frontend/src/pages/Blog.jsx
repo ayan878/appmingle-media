@@ -1,63 +1,64 @@
 import { useState } from "react";
-import login from "../api/loginApi";
+import blogPost from "../api/postApi";
 
 function Blog() {
   const [responseMessage, setResponseMessage] = useState("");
   const [isSubmit, setIsSubmit] = useState(false);
 
-  const [loginData, setLoginData] = useState({
-    name: "",
-    password: "",
+  const [postData, setPostData] = useState({
+    title: "",
+    content: "",
   });
 
-  const handleLogin = async (e) => {
+  const handlePost = async (e) => {
     e.preventDefault();
     try {
-      const response = await login(loginData);
+      const response = await blogPost(postData);
       if (response.success) {
-        setResponseMessage("Successfully login");
+        setResponseMessage("Post created successfully");
         setIsSubmit(true);
       } else {
-        setResponseMessage("login failed");
+        setResponseMessage("Post creation failed");
       }
     } catch (error) {
-      setResponseMessage(error);
+      setResponseMessage("An error occurred: " + error.message);
     }
   };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setLoginData((prevData) => ({
+    setPostData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
   };
 
   return (
-    <form className="mx-auto w-96 flex flex-col gap-4 mt-8">
+    <form
+      onSubmit={handlePost}
+      className="mx-auto w-96 flex flex-col gap-4 mt-8"
+    >
       <input
         type="text"
-        name="name"
-        value={loginData.name}
+        name="title"
+        value={postData.title}
         onChange={handleChange}
-        placeholder="Name"
+        placeholder="Title"
         className="py-2 outline rounded-sm"
+        required
       />
-      <input
-        type="password"
-        name="password"
-        value={loginData.password}
+      <textarea
+        name="content"
+        value={postData.content}
         onChange={handleChange}
-        placeholder="Password"
+        placeholder="Content"
         className="py-2 outline rounded-sm"
+        required
       />
-      <button
-        onSubmit={handleLogin}
-        className="bg-sky-400 text-black rounded-sm py-2"
-      >
-        Login
+      <button type="submit" className="bg-sky-400 text-black rounded-sm py-2">
+        Submit
       </button>
-      {isSubmit ? <p>{responseMessage}</p> : ""}
+      {isSubmit && <p>{responseMessage}</p>}
     </form>
   );
 }

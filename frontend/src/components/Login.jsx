@@ -1,5 +1,5 @@
 import { useState } from "react";
-import login from "../api/loginApi";
+import login from "../api/postApi";
 
 function Login() {
   const [responseMessage, setResponseMessage] = useState("");
