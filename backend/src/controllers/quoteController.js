@@ -11,7 +11,11 @@ const quotes = async (req, res) => {
       service,
     });
 
-    const savedQuote = await quote.save();
+    // const savedQuote = await quote.save();
+     console.time("Save Operation");
+     const savedQuote = await quote.save();
+     console.timeEnd("Save Operation");
+
     res.status(201).json({
       success: true,
       message: "Quotation sent successfully",
