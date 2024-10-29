@@ -8,6 +8,7 @@ dotenv.config();
 
 const app = express();
 
+// CORS setup
 app.use(
   cors({
     origin: "https://appmingle-media.vercel.app",
@@ -15,21 +16,31 @@ app.use(
   })
 );
 
+// Middleware
 app.use(express.json());
 app.use(router);
 
+// Root route
 app.get("/", (req, res) => {
   res.status(200).json("Welcome, your app is working well");
 });
-const PORT = process.env.PORT;
+
+const PORT = process.env.PORT || 3000; 
 const mongodb_uri = process.env.MONGODB_URI;
+
 mongoose
   .connect(mongodb_uri)
-  .then(
-    app.listen(PORT, (req, res) => {
-      console.log(`server is started on http://localhost:3000`);
-    })
-  )
+  .then(() => {
+    app.listen(PORT, () => {
+      console.log(`Server is started on http://localhost:${PORT}`);
+    });
+  })
   .catch((error) => {
-    console.error(error);
+    console.error("MongoDB connection error:", error);
   });
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send("Something went wrong!");
+});
