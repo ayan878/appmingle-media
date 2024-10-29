@@ -16,11 +16,13 @@ app.use(
 
 app.use(express.json());
 app.use(router);
+
+const PORT=process.env.PORT
 const mongodb_uri = process.env.MONGODB_URI;
 mongoose
   .connect(mongodb_uri)
   .then(
-    app.listen(3000, (req, res) => {
+    app.listen(PORT, (req, res) => {
       console.log(`server is started on http://localhost:3000`);
     })
   )
