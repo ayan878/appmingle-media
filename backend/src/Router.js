@@ -1,6 +1,6 @@
 import express from "express";
 import quotes from "./controllers/quoteController.js";
-import login from "./controllers/LoginController.js";
+import createPost from "./controllers/postsController.js";
 
 const router = express.Router();
 
@@ -10,7 +10,7 @@ router.get("/", (req, res) => {
   res.status(200).json("Welcome, your app is working well");
 });
 
-router.post("/blog", login);
+router.post("/blog", createPost);
 router.post("/test", (req, res) => {
   res.status(200).json({ success: true, message: "Test successful!" });
 });
