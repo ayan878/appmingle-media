@@ -35,7 +35,7 @@ const mongodb_uri = process.env.MONGODB_URI;
 const PORT = process.env.PORT || 3000;
 
 mongoose
-  .connect(mongodb_uri)
+  .connect("mongodb+srv://ayanraza087:ayan878@cluster0.t9kvt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => {
     app.listen(PORT, () => {
       console.log(`Server is started on http://localhost:${PORT}`);
