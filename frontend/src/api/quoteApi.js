@@ -9,8 +9,6 @@ const quote = async (formData) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(formData),
-      mode:'cors',
-      credentials: "same-origin",
     });
 
     if (!response.ok) {
