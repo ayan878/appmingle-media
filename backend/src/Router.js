@@ -5,7 +5,7 @@ import createPost from "./controllers/postsController.js";
 const router = express.Router();
 
 router.post("/", quotes);
-
+router.post("/contact-us", quotes);
 router.get("/", (req, res) => {
   res.status(200).json("Welcome, your app is working well");
 });
