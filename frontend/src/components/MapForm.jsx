@@ -8,8 +8,8 @@ import {
 } from "react-icons/fa6";
 import { useContext } from "react";
 import Context from "../context/ContextProvider";
-import quote from "../api/quoteApi";
 import { Circles } from "react-loading-icons";
+import contact from "../api/contactApi";
 
 const MapForm = () => {
   const {
@@ -35,7 +35,7 @@ const MapForm = () => {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await quote(formData);
+      const response = await contact(formData);
       if (response.success) {
         setResponseMessage("Your submission is successful.");
         setIsSubmit(true);
