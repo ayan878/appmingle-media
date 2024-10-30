@@ -9,7 +9,7 @@ function Header() {
 
   return (
     <nav className="relative bg-transparent mx-1 md:mx-8 py-4">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto text-white">
         <Link
           to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -19,7 +19,7 @@ function Header() {
         {/* Sidebar */}
         <button
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-900 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm  rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-expanded={openMenu}
           onClick={() => setOpenMenu(!openMenu)}
         >
@@ -58,7 +58,7 @@ function Header() {
             <li className="">
               <Link
                 to="about-us"
-                className="block py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 ABOUT US
               </Link>
@@ -67,7 +67,7 @@ function Header() {
               <div className="relative">
                 <button
                   onMouseEnter={() => setOpenDropdown(!openDropdown)}
-                  className="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                  className="flex items-center justify-between w-full py-2 px-3  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                 >
                   SERVICES
                   <IoMdArrowDropdown className="hover:transition-all hover:rotate-180" />
@@ -132,7 +132,7 @@ function Header() {
             <li className="">
               <Link
                 to="/blog"
-                className="block py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 BLOG
               </Link>
@@ -140,7 +140,7 @@ function Header() {
             <li className="">
               <Link
                 to="/contact-us"
-                className="block py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 CONTACT US
               </Link>
@@ -148,7 +148,7 @@ function Header() {
             <li className="">
               <Link
                 to="/"
-                className="hidden md:flex ml-4 py-2 px-2 bg-blue-400 text-gray-900 hover:bg-gray-100 md:hover:bg-blue-300 md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="hidden md:flex ml-4 py-2 px-2 bg-blue-400  hover:bg-gray-100 md:hover:bg-blue-300 md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 GET A QUOTE
               </Link>
