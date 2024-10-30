@@ -14,7 +14,7 @@ function Addressbar() {
   const [showSearch, setShowSearch] = useState(false); 
 
   return (
-    <div className="hidden mx-8 py-4 items-center justify-between bg-transparent border-b md:flex">
+    <div className="hidden relative mx-8 py-4 items-center justify-between bg-transparent border-b md:flex">
       <div className="flex items-center justify-between gap-2">
         <a
           href="tel:+916203689042"

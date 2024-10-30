@@ -8,7 +8,7 @@ function Header() {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <nav className="bg-transparent mx-1 md:mx-8">
+    <nav className="relative bg-transparent mx-1 md:mx-8 py-4">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
         <Link
           to="/"

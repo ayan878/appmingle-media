@@ -1,7 +1,10 @@
 // import web from "../assets/pexels-tranmautritam-326503-scaled.jpg";
 // import mobile from "../assets/pexels-luckysam-50614-scaled.jpg";
 // import marketing from "../assets/pexels-mikael-blomkvist-6476808-scaled.jpg";
-// import wave from "../assets/wave.png";
+// import webDesign from "../assets/webdesign.jpeg";
+// import seo from "../assets/seo-techniques.jpeg";
+// import crm from "../assets/crm.jpg";
+
 
 // const services = [
 //   {
@@ -22,26 +25,34 @@
 //     desc: "Digital marketing promotes products or services through online channels to reach and engage target audiences effectively.",
 //     button: "ENQUIRY NOW",
 //   },
+//   {
+//     src: webDesign,
+//     title: "Web Design",
+//     desc: "Website design involves creating the visual layout and user experience of a website to ensure it is attractive and functional.",
+//     button: "ENQUIRY NOW",
+//   },
+//   {
+//     src: seo,
+//     title: "SEO",
+//     desc: "SEO improves website visibility on search engines through optimization techniques, enhancing rankings, and driving organic traffic.",
+//     button: "ENQUIRY NOW",
+//   },
+//   {
+//     src: crm,
+//     title: "CRM & ERP",
+//     desc: "CRM manages customer relationships, while ERP integrates business processes to streamline operations and improve efficiency across.",
+//     button: "ENQUIRY NOW",
+//   },
 // ];
 
-// function AppMingleServices() {
+// function Services() {
 //   return (
-//     <div className="p-8">
-//       <img src={wave} alt="wave pic" className="mx-auto h-28" />
-//       <h1 className="text-3xl font-Merri font-bold text-center p-4 -mt-12">
-//         AppMingle Media Services
-//       </h1>
-//       <p className="text-center md:mx-44 mx-auto text-zinc-400">
-//         Best development services include custom website creation, innovative
-//         mobile app development, robust CRM & ERP solutions, and comprehensive
-//         digital marketing strategies, all tailored to meet the unique needs of
-//         your business.
-//       </p>
-//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+//     <div className="relative p-8">
+//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 text-black md:mt-96">
 //         {services.map((service, index) => (
 //           <div
 //             className={`border overflow-hidden shadow-lg pb-4 space-y-4 ${
-//               index%2 === 0 ? "mx-auto" : "text-center"
+//               index % 2 === 1 ? "" : ""
 //             }`}
 //             key={service.title}
 //           >
@@ -53,31 +64,28 @@
 //             <h2 className="text-xl text-center font-Merri font-semibold mt-2">
 //               {service.title}
 //             </h2>
-//             <p className="text-sm text-gray-600 mt-1 px-4">{service.desc}</p>
+//             <p className="text-sm text-center text-gray-600 mt-1 px-4">
+//               {service.desc}
+//             </p>
 //             <button className="flex items-center justify-center text-blue-400 px-4 py-2 mt-4 mx-auto hover:bg-blue-500 transition">
 //               {service.button}
 //             </button>
 //           </div>
 //         ))}
 //       </div>
-//       <div className="text-center p-12">
-//         <a
-//           href="/services"
-//           className="bg-blue-400 px-4 py-2 hover:bg-blue-500 transition text-white"
-//         >
-//           MORE SERVICES
-//         </a>
-//       </div>
 //     </div>
 //   );
 // }
 
-// export default AppMingleServices;
+// export default Services;
+
 
 import web from "../assets/pexels-tranmautritam-326503-scaled.jpg";
 import mobile from "../assets/pexels-luckysam-50614-scaled.jpg";
 import marketing from "../assets/pexels-mikael-blomkvist-6476808-scaled.jpg";
-import wave from "../assets/wave.png";
+import webDesign from "../assets/webdesign.jpeg";
+import seo from "../assets/seo-techniques.jpeg";
+import crm from "../assets/crm.jpg";
 
 const services = [
   {
@@ -98,27 +106,33 @@ const services = [
     desc: "Digital marketing promotes products or services through online channels to reach and engage target audiences effectively.",
     button: "ENQUIRY NOW",
   },
+  {
+    src: webDesign,
+    title: "Web Design",
+    desc: "Website design involves creating the visual layout and user experience of a website to ensure it is attractive and functional.",
+    button: "ENQUIRY NOW",
+  },
+  {
+    src: seo,
+    title: "SEO",
+    desc: "SEO improves website visibility on search engines through optimization techniques, enhancing rankings, and driving organic traffic.",
+    button: "ENQUIRY NOW",
+  },
+  {
+    src: crm,
+    title: "CRM & ERP",
+    desc: "CRM manages customer relationships, while ERP integrates business processes to streamline operations and improve efficiency across.",
+    button: "ENQUIRY NOW",
+  },
 ];
 
-function AppMingleServices() {
+function Services() {
   return (
     <div className="relative p-8">
-      <img src={wave} alt="wave pic" className="mx-auto h-28" />
-      <h1 className="text-3xl font-Merri font-bold text-center p-4 -mt-12">
-        AppMingle Media Services
-      </h1>
-      <p className="text-center md:mx-44 mx-auto text-zinc-400">
-        Best development services include custom website creation, innovative
-        mobile app development, robust CRM & ERP solutions, and comprehensive
-        digital marketing strategies, all tailored to meet the unique needs of
-        your business.
-      </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-        {services.map((service, index) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-24 md:mt-6 text-black">
+        {services.map((service) => (
           <div
-            className={`border overflow-hidden shadow-lg pb-4 space-y-4 ${
-              index % 2 === 1 ? "" : ""
-            }`}
+            className="border overflow-hidden shadow-lg pb-4 space-y-4 transition-transform transform hover:scale-105"
             key={service.title}
           >
             <img
@@ -138,16 +152,8 @@ function AppMingleServices() {
           </div>
         ))}
       </div>
-      <div className="text-center p-12">
-        <a
-          href="/services"
-          className="bg-blue-400 px-4 py-2 hover:bg-blue-500 transition text-white"
-        >
-          MORE SERVICES
-        </a>
-      </div>
     </div>
   );
 }
 
-export default AppMingleServices;
+export default Services;

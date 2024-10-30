@@ -10,6 +10,7 @@ export default {
         "footer-pattern": "url('/Untitled-design-83.png')",
         hero: "url('/11.gif')",
         mobHero: "url('/12.gif')",
+        service: "url('/image-40.jpg')",
       },
       container: {
         center: true,
