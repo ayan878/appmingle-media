@@ -14,14 +14,14 @@ export default {
       container: {
         center: true,
         padding: "1px",
-        screens: {
-          sm: "640px",
-          md: "768px",
-          lg: "1024px",
-          xl: "1280px",
-          "2xl": "1536px",
-        },
       },
+    },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1200px",
+      "2xl": "1536px",
     },
     boxShadow: {
       "custom-light": "0 4px 15px rgba(255, 255, 255, 0.3)",

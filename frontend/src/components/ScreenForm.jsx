@@ -17,7 +17,6 @@ function ScreenForm() {
     setIsSubmit,
   } = useContext(Context);
 
-
   const handleModal = () => {
     setIsModalOpen(true);
   };
@@ -50,8 +49,8 @@ function ScreenForm() {
   };
 
   return (
-    <form className="absolute flex flex-col lg:h-[400px] md:w-60 lg:w-96 gap-3 lg:gap-6 mt-[640px] md:mt-4 lg:mt-20 items-center justify-center ml-20 md:ml-[540px] lg:ml-[790px]">
-      <h1 className="text-blue-400 text-md md:text-xs lg:text-lg ">
+    <form className="absolute flex flex-col gap-3 lg:h-[400px] md:w-60 lg:w-72 mt-[660px] md:mt-4 lg:mt-10 xl:mt-20 items-center justify-center right-20 md:right-8 lg:right-12 xl:right-20 xl:gap-4">
+      <h1 className="text-center text-blue-400 md:text-xs lg:text-[16px] xl:text-lg xl:w-72">
         Challenge, Call Back in 2 minutes
       </h1>
       <input
@@ -59,7 +58,7 @@ function ScreenForm() {
         name="name"
         value={formData.name}
         onChange={handleChange}
-        className="rounded-lg bg-transparent md:h-8 lg:h-10 border py-1 px-2 w-64 md:w-48 lg:w-72 placeholder:text-zinc-500 placeholder:text-xs lg:placeholder:text-base"
+        className="rounded-lg bg-transparent md:h-8 lg:h-10 border py-1 px-2 w-64 md:w-48 lg:w-64 xl:w-72 placeholder:text-zinc-500 placeholder:text-xs lg:placeholder:text-base"
         placeholder="Name*"
         required
       />
@@ -68,7 +67,7 @@ function ScreenForm() {
         value={formData.phone}
         name="phone"
         onChange={handleChange}
-        className="rounded-lg bg-transparent md:h-8 lg:h-10 border py-1 px-2 w-64 md:w-48 lg:w-72 placeholder:text-zinc-500 placeholder:text-xs lg:placeholder:text-base"
+        className="rounded-lg bg-transparent md:h-8 lg:h-10 border py-1 px-2 w-64 md:w-48 lg:w-64 xl:w-72 placeholder:text-zinc-500 placeholder:text-xs lg:placeholder:text-base"
         placeholder="Phone Number*"
         required
       />
@@ -77,14 +76,14 @@ function ScreenForm() {
         name="email"
         value={formData.email}
         onChange={handleChange}
-        className="rounded-lg bg-transparent md:h-8 lg:h-10 border py-1 px-2 w-64 md:w-48 lg:w-72 placeholder:text-zinc-500 placeholder:text-xs lg:placeholder:text-base"
+        className="rounded-lg bg-transparent md:h-8 lg:h-10 border py-1 px-2 w-64 md:w-48 lg:w-64 xl:w-72 placeholder:text-zinc-500 placeholder:text-xs lg:placeholder:text-base"
         placeholder="Email"
       />
       <select
         name="service"
         onChange={handleChange}
         value={formData.service}
-        className="rounded-lg bg-transparent text-xs lg:text-base h-8 lg:h-10 border py-1 px-2 w-64 md:w-48 lg:w-72 text-zinc-500"
+        className="rounded-lg bg-transparent text-xs lg:text-base h-8 lg:h-10 border py-1 px-2 w-64 md:w-48 lg:w-64 xl:w-72 text-zinc-500"
       >
         <option className="text-black" value="">
           Select Service
@@ -111,7 +110,7 @@ function ScreenForm() {
       <button
         type="submit"
         onClick={handleSubmit}
-        className="flex items-center justify-center text-xs lg:text-base gap-1 bg-sky-600 py-2 px-2 w-64 md:w-48 lg:w-72 rounded-lg text-white font-medium"
+        className="flex items-center justify-center text-xs lg:text-base gap-1 bg-sky-600 py-2 px-2 w-64 md:w-48 lg:w-64 xl:w-72 rounded-lg text-white font-medium"
       >
         {isLoading ? (
           <Circles className="h-4 w-4 lg:h-6 lg:w-6" />
@@ -121,13 +120,11 @@ function ScreenForm() {
         Get Call Back in 2 minutes
       </button>
       {isSubmit ? (
-        <p className="text-lg md:text-sm lg:text-xl">
-          {responseMessage}
-        </p>
+        <p className="text-lg md:text-sm lg:text-xl">{responseMessage}</p>
       ) : (
         ""
       )}
-      <div className="flex items-center justify-between w-64 md:w-48 text-xs lg:text-base lg:w-72 gap-2 md:-mt-2">
+      <div className="flex items-center justify-between w-64 md:w-48 text-xs lg:text-base lg:w-64 xl:w-72 gap-2 md:-mt-2">
         <p className="bg-red-600 text-center w-full py-2 px-2 rounded-lg text-white font-medium">
           <a href="tel:+916203689042">Call Now</a>
         </p>
