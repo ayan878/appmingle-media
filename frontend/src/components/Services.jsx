@@ -129,7 +129,7 @@ const services = [
 function Services() {
   return (
     <div className="relative p-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-24 md:mt-6 text-black">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 md:mt-6 text-black">
         {services.map((service) => (
           <div
             className="border overflow-hidden shadow-lg pb-4 space-y-4 transition-transform transform hover:scale-105"
