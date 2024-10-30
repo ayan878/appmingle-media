@@ -61,8 +61,13 @@ const MapForm = () => {
           and provide support.
         </p>
         <div className="text-white mb-4">
-          <span className="block mb-2">Link With Us Now</span>
+          <span className="block xl:hidden text-md xl:text-lg text-black mb-2">
+            Link With Us Now :
+          </span>
           <div className="flex items-center justify-center md:justify-start space-x-2">
+            <span className="hidden xl:block text-md xl:text-lg text-black mb-2">
+              Link With Us Now :
+            </span>
             <FaLinkedin className="bg-sky-400 w-8 h-8 p-1 rounded-full hover:bg-sky-500 transition" />
             <FaFacebook className="bg-sky-400 w-8 h-8 p-1 rounded-full hover:bg-sky-500 transition" />
             <FaTwitter className="bg-sky-400 w-8 h-8 p-1 rounded-full hover:bg-sky-500 transition" />
@@ -155,9 +160,7 @@ const MapForm = () => {
         >
           {isLoading ? <Circles className="h-4 w-4" /> : "Send"}
         </button>
-        {isSubmit && (
-          <p className="text-center mt-2">{responseMessage}</p>
-        )}
+        {isSubmit && <p className="text-center mt-2">{responseMessage}</p>}
       </form>
     </div>
   );
