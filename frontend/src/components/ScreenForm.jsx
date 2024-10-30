@@ -50,7 +50,7 @@ function ScreenForm() {
   };
 
   return (
-    <form className="absolute flex flex-col lg:h-[400px] md:w-60 lg:w-96 gap-3 lg:gap-6 mt-[660px] md:mt-4 lg:mt-20 ml-20 md:ml-[540px] lg:ml-[850px]">
+    <form className="absolute flex flex-col lg:h-[400px] md:w-60 lg:w-96 gap-3 lg:gap-6 mt-[640px] md:mt-4 lg:mt-20 items-center justify-center ml-20 md:ml-[540px] lg:ml-[790px]">
       <h1 className="text-blue-400 text-md md:text-xs lg:text-lg ">
         Challenge, Call Back in 2 minutes
       </h1>
