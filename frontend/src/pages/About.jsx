@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import ServiceModal from "../components/ServiceModal";
 import Map from "../components/Map";
 import { AboutAppMingleMediaService } from "../components/AboutAppMingleService";
-
+import AboutService from "../components/AboutService";
 
 
 function About() {
@@ -20,6 +20,7 @@ function About() {
         <Header />
       </div>
       <AboutAppMingleMediaService />
+      <AboutService/>
       <Map />
       <Footer />
     </div>
