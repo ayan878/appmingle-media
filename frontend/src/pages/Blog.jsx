@@ -1,5 +1,12 @@
 import { useState } from "react";
 import blogPost from "../api/postApi";
+import MapForm from "../components/MapForm";
+import Footer from "../components/Footer";
+import MobAddressbar from "../components/MobAddressbar";
+import Addressbar from "../components/Addressbar";
+import Header from "../components/Header";
+import ContactBox from "../components/ContactBox";
+import ServiceModal from "../components/ServiceModal";
 
 function Blog() {
   const [responseMessage, setResponseMessage] = useState("");
@@ -34,32 +41,45 @@ function Blog() {
   };
 
   return (
-    <form
-      onSubmit={handlePost}
-      className="mx-auto w-96 flex flex-col gap-4 mt-8"
-    >
-      <input
-        type="text"
-        name="title"
-        value={postData.title}
-        onChange={handleChange}
-        placeholder="Title"
-        className="py-2 outline rounded-sm"
-        required
-      />
-      <textarea
-        name="content"
-        value={postData.content}
-        onChange={handleChange}
-        placeholder="Content"
-        className="py-2 outline rounded-sm"
-        required
-      />
-      <button type="submit" className="bg-sky-400 text-black rounded-sm py-2">
-        Submit
-      </button>
-      {isSubmit && <p>{responseMessage}</p>}
-    </form>
+    <div>
+      <ServiceModal />
+      <div className="absolute top-0 left-0 w-full z-10 text-white">
+        <div className="md:hidden flex relative">
+          <MobAddressbar />
+        </div>
+        <Addressbar />
+        <Header />
+      </div>
+      <ContactBox />
+      {/* <form
+        onSubmit={handlePost}
+        className="mx-auto w-96 flex flex-col gap-4 mt-8"
+      >
+        <input
+          type="text"
+          name="title"
+          value={postData.title}
+          onChange={handleChange}
+          placeholder="Title"
+          className="py-2 outline rounded-sm"
+          required
+        />
+        <textarea
+          name="content"
+          value={postData.content}
+          onChange={handleChange}
+          placeholder="Content"
+          className="py-2 outline rounded-sm"
+          required
+        />
+        <button type="submit" className="bg-sky-400 text-black rounded-sm py-2">
+          Submit
+        </button>
+        {isSubmit && <p>{responseMessage}</p>}
+      </form> */}
+      <MapForm />
+      <Footer />
+    </div>
   );
 }
 
