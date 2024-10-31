@@ -13,12 +13,12 @@ function AboutScrollable() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 py-4">
         <div>
           <div className="flex items-center justify-center mb-2 space-x-2 mx-auto">
-            <FaLinkedin className="bg-sky-400 w-8 h-8 md:w-12 md:h-12 p-1 rounded-sm hover:bg-sky-500 transition" />
-            <FaFacebook className="bg-sky-400 w-8 h-8 md:w-12 md:h-12 p-1 rounded-sm hover:bg-sky-500 transition" />
-            <FaTwitter className="bg-sky-500 w-8 h-8 md:w-12 md:h-12 p-1 rounded-sm hover:bg-sky-600 transition" />
-            <FaYoutube className="bg-red-800 w-8 h-8 md:w-12 md:h-12 p-1 rounded-sm hover:bg-red-900 transition" />
-            <FaInstagram className="bg-red-600 w-8 h-8 md:w-12 md:h-12 p-1 rounded-md hover:bg-red-700 transition" />
-            <FaWhatsapp className="bg-green-500 w-8 h-8 md:w-12 md:h-12 p-1 rounded-sm hover:bg-green-600 transition" />
+            <FaLinkedin className="bg-sky-400 w-8 h-8 lg:w-12 lg:h-12 p-1 rounded-sm hover:bg-sky-500 transition" />
+            <FaFacebook className="bg-sky-400 w-8 h-8 lg:w-12 lg:h-12 p-1 rounded-sm hover:bg-sky-500 transition" />
+            <FaTwitter className="bg-sky-500 w-8 h-8 lg:w-12 lg:h-12 p-1 rounded-sm hover:bg-sky-600 transition" />
+            <FaYoutube className="bg-red-800 w-8 h-8 lg:w-12 lg:h-12 p-1 rounded-sm hover:bg-red-900 transition" />
+            <FaInstagram className="bg-red-600 w-8 h-8 lg:w-12 lg:h-12 p-1 rounded-sm hover:bg-red-700 transition" />
+            <FaWhatsapp className="bg-green-500 w-8 h-8 lg:w-12 lg:h-12 p-1 rounded-sm hover:bg-green-600 transition" />
           </div>
           <iframe
             className="w-[350px] h-[220px] lg:w-[460px] lg:h-[240px] xl:w-[560px] xl:h-[315px]"
@@ -31,7 +31,7 @@ function AboutScrollable() {
           ></iframe>
         </div>
         <div>
-          <h1 className="text-black font-bold md:text-xl lg:text-2xl text-center mb-7 lg:mb-2 lg:py-2">
+          <h1 className="text-black font-bold md:text-xl lg:text-2xl text-center mb-3 lg:mb-2 lg:py-2 mt-4 md:mt-0">
             AppMingle Media Inside Image
           </h1>
           <img
