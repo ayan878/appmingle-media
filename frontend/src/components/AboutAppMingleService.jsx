@@ -79,7 +79,7 @@ export function AboutAppMingleMediaService() {
           <img
             src={image2}
             alt="Experience representation"
-            className="w-32 h-20 md:w-48 md:h-20 lg:w-44 lg:h-28 mt-4 border-8 border-white"
+            className="w-32 h-20 md:w-48 md:h-20 lg:w-44 lg:h-28 xl:w-48 mt-4 border-8 border-white"
           />
         </div>
         <div className="col-span-1 md:col-span-2 flex justify-center">
