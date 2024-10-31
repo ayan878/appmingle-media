@@ -4,6 +4,9 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ServiceModal from "../components/ServiceModal";
 import Map from "../components/Map";
+import { AboutAppMingleMediaService } from "../components/AboutAppMingleService";
+
+
 
 function About() {
   return (
@@ -16,6 +19,7 @@ function About() {
         <Addressbar />
         <Header />
       </div>
+      <AboutAppMingleMediaService />
       <Map />
       <Footer />
     </div>
