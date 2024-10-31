@@ -6,6 +6,7 @@ import ServiceModal from "../components/ServiceModal";
 import Map from "../components/Map";
 import { AboutAppMingleMediaService } from "../components/AboutAppMingleService";
 import AboutService from "../components/AboutService";
+import AboutScrollable from "../components/AboutScrollable";
 
 
 function About() {
@@ -21,6 +22,7 @@ function About() {
       </div>
       <AboutAppMingleMediaService />
       <AboutService/>
+      <AboutScrollable/>
       <Map />
       <Footer />
     </div>
