@@ -12,7 +12,7 @@ function AboutScrollable() {
     <div className="font-Merri px-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 py-4">
         <div>
-          <div className="flex items-center justify-center mb-2 lg:mb-0 space-x-2 mx-auto">
+          <div className="flex items-center justify-center mb-2 space-x-2 mx-auto">
             <FaLinkedin className="bg-sky-400 w-8 h-8 md:w-12 md:h-12 p-1 rounded-sm hover:bg-sky-500 transition" />
             <FaFacebook className="bg-sky-400 w-8 h-8 md:w-12 md:h-12 p-1 rounded-sm hover:bg-sky-500 transition" />
             <FaTwitter className="bg-sky-500 w-8 h-8 md:w-12 md:h-12 p-1 rounded-sm hover:bg-sky-600 transition" />
@@ -31,7 +31,7 @@ function AboutScrollable() {
           ></iframe>
         </div>
         <div>
-          <h1 className="text-black font-bold md:text-xl lg:text-2xl text-center mb-7 lg:mb-0 lg:py-2">
+          <h1 className="text-black font-bold md:text-xl lg:text-2xl text-center mb-7 lg:mb-2 lg:py-2">
             AppMingle Media Inside Image
           </h1>
           <img
