@@ -11,9 +11,11 @@ function AboutUs() {
         <img
           src={wave}
           alt="wave"
-          className="mx-auto lg:ml-0 h-24 w-28 md:w-40"
+          className="mx-auto 
+          lg:ml-0 h-8 w-20 mb-10 xl:mb-10  md:w-20 md:h-10
+          "
         />
-        <h1 className="text-3xl text-center font-bold lg:text-start font-mono mb-4">
+        <h1 className="text-3xl text-center font-bold lg:text-start font-Merri mb-4 -mt-12">
           About Us
         </h1>
         <p className="text-center md:text-start font-serif mb-4 text-gray-700">
@@ -101,7 +103,7 @@ function AboutUs() {
             </div>
           </div>
         </div>
-        <img src={image2} className="w-11/12 sm:w-4/5 lg:w-full mx-auto"/>
+        <img src={image2} className="w-11/12 sm:w-4/5 lg:w-full mx-auto" />
       </div>
     </div>
   );

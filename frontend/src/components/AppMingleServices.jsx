@@ -103,7 +103,7 @@ const services = [
 function AppMingleServices() {
   return (
     <div className="relative p-8">
-      <img src={wave} alt="wave pic" className="mx-auto h-28" />
+      <img src={wave} alt="wave pic" className="mx-auto h-8 w-36 mb-10 xl:mb-10" />
       <h1 className="text-3xl font-Merri font-bold text-center p-4 -mt-12">
         AppMingle Media Services
       </h1>
