@@ -26,7 +26,7 @@ const sendSms = async (req, res) => {
     //   from: `whatsapp:${process.env.TWILIO_WHATSAPP_NUMBER}`, 
     //   to: `whatsapp:${phone}`, 
     // });
-
+    
     res.json({
       success: true,
       smsMessageSid: smsMsg.sid,

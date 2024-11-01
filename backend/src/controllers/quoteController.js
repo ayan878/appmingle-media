@@ -1,5 +1,3 @@
-import userModel from "../models/userModel.js";
-
 // const quotes = async (req, res) => {
 //   try {
 //     const { name, phone, email, service } = req.body;
@@ -12,7 +10,7 @@ import userModel from "../models/userModel.js";
 //     });
 
 //     const savedQuote = await quote.save();
-   
+
 //     res.status(201).json({
 //       success: true,
 //       message: "Quotation sent successfully",
@@ -21,7 +19,7 @@ import userModel from "../models/userModel.js";
 //   } catch (error) {
 //     console.error("Error saving quote:", error);
 //     res.status(500).json({
-//       success: false, 
+//       success: false,
 //       message: "Internal server error",
 //     });
 //   }
@@ -29,6 +27,7 @@ import userModel from "../models/userModel.js";
 
 // export default quotes;
 
+import userModel from "../models/userModel.js";
 const quotes = async (req, res) => {
   console.log("Received request:", req.body);
   try {
@@ -39,13 +38,11 @@ const quotes = async (req, res) => {
     const savedQuote = await quote.save();
     console.timeEnd("Database Save");
 
-    res
-      .status(201)
-      .json({
-        success: true,
-        message: "Quotation sent successfully",
-        quote: savedQuote,
-      });
+    res.status(201).json({
+      success: true,
+      message: "Quotation sent successfully",
+      quote: savedQuote,
+    });
   } catch (error) {
     console.error("Error saving quote:", error);
     res.status(500).json({ success: false, message: "Internal server error" });
