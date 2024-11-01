@@ -25,7 +25,8 @@ export default {
       "2xl": "1536px",
     },
     boxShadow: {
-      "custom-light": "0 4px 15px rgba(255, 255, 255, 0.3)",
+      "custom-light": "0 10px 15px rgba(255, 255, 255, 0.4)",
+      "custom-light-dark": "0 4px 15px rgba(0, 0, 0, 0.4)",
       "custom-dark": "0 4px 15px rgba(0, 0, 0, 0.5)",
       "custom-xl": "0 10px 30px rgba(0, 0, 0, 0.7)",
     },

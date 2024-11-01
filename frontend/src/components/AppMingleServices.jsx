@@ -116,7 +116,7 @@ function AppMingleServices() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
         {services.map((service, index) => (
           <div
-            className={`border overflow-hidden shadow-lg pb-4 space-y-4 ${
+            className={`bg-zinc-200 shadow-custom-dark overflow-hidden shadow-lg pb-4 space-y-4 ${
               index % 2 === 1 ? "" : ""
             }`}
             key={service.title}

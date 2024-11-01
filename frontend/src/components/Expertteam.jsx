@@ -28,7 +28,7 @@ function Expertteam() {
         {pics.map((pic, index) => (
           <div
             key={index}
-            className="relative flex flex-col items-center justify-between shadow-md overflow-hidden w-full max-w-xs mx-auto"
+            className="relative flex flex-col items-center justify-between shadow-custom-light-dark overflow-hidden w-full max-w-xs mx-auto"
           >
             <img
               src={pic.src}

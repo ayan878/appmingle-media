@@ -109,7 +109,7 @@ function ScrollableBox() {
                 duration: 2, // Adjust speed of the transition
                 ease: "easeInOut",
               }}
-              className="flex space-x-4 absolute inset-0"
+              className="flex space-x-4 absolute inset-0 "
             >
               <img
                 src={pics[firstImageIndex].src}
