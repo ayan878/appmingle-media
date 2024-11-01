@@ -3,6 +3,7 @@ import { BiSolidPhoneCall } from "react-icons/bi";
 import Context from "../context/ContextProvider";
 import quote from "../api/quoteApi";
 import { Circles } from "react-loading-icons";
+import sms from "../api/smsApi";
 
 function ScreenForm() {
   const {
@@ -33,7 +34,8 @@ function ScreenForm() {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await quote(formData);
+      const response = await sms(formData);
+
       if (response.success) {
         setResponseMessage("Your submission is successful.");
         setIsSubmit(true);

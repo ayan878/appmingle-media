@@ -98,8 +98,8 @@ import { IoClose } from "react-icons/io5";
 import preloader from "../assets/preloader1.gif";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import Context from "../context/ContextProvider";
-import quote from "../api/quoteApi";
 import { Circles } from "react-loading-icons";
+import sms from "../api/smsApi";
 
 function ModalForm() {
   const {
@@ -152,7 +152,7 @@ function ModalForm() {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await quote(formData);
+      const response = await sms(formData);
       if (response.success) {
         setResponseMessage("Your submission is successful.");
         setIsSubmit(true);

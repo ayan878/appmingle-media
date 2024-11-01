@@ -1,5 +1,5 @@
 import { useState } from "react";
-import blogPost from "../api/postApi";
+import blogPost from "../api/postsApi";
 import MapForm from "../components/MapForm";
 import Footer from "../components/Footer";
 import MobAddressbar from "../components/MobAddressbar";
