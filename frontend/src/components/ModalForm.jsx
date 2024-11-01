@@ -152,7 +152,7 @@ function ModalForm() {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await sms();
+      const response = await sms(formData);
       if (response.success) {
         setResponseMessage("Your submission is successful.");
         setIsSubmit(true);
