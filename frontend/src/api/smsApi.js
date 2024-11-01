@@ -8,7 +8,8 @@ const sms = async () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(),
+    //   body: JSON.stringify(),
+    body:null,
     });
 
     if (!response.ok) {

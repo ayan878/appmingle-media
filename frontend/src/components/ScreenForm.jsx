@@ -33,11 +33,11 @@ function ScreenForm() {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await sms();
+      const response = await sms(formData);
 
       if (response.success) {
         console.log(response);
-        setResponseMessage("Your submission is successful.");
+        setResponseMessage("Your request has been sent successfully!");
         setIsSubmit(true);
       } else {
         setResponseMessage("Failed to send quote. Please try again.");
