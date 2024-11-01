@@ -36,7 +36,6 @@ function ScreenForm() {
       const response = await sms(formData);
 
       if (response.success) {
-        console.log(response);
         setResponseMessage("Your request has been sent successfully!");
         setIsSubmit(true);
       } else {
