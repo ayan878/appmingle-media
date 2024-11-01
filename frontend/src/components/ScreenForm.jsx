@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import Context from "../context/ContextProvider";
-import quote from "../api/quoteApi";
 import { Circles } from "react-loading-icons";
 import sms from "../api/smsApi";
 
