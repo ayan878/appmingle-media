@@ -36,7 +36,7 @@ function ScreenForm() {
       const response = await sms(formData);
 
       if (response.success) {
-        setResponseMessage("Your request has been sent successfully!");
+        setResponseMessage("Your submission is successful.");
         setIsSubmit(true);
       } else {
         setResponseMessage("Failed to send quote. Please try again.");
