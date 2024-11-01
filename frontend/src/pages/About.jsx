@@ -7,6 +7,7 @@ import Map from "../components/Map";
 import { AboutAppMingleMediaService } from "../components/AboutAppMingleService";
 import AboutService from "../components/AboutService";
 import AboutScrollable from "../components/AboutScrollable";
+import ScrollableBox from "../components/ScrollableBox";
 
 
 function About() {
@@ -23,6 +24,7 @@ function About() {
       <AboutAppMingleMediaService />
       <AboutService/>
       <AboutScrollable/>
+      <ScrollableBox/>
       <Map />
       <Footer />
     </div>

@@ -7,6 +7,11 @@ import {
 } from "react-icons/fa6";
 import officeImg from "../assets/AppMingle-Media-Office.png";
 import { FaFacebook } from "react-icons/fa";
+
+
+
+const pics=[{}];
+
 function AboutScrollable() {
   return (
     <div className="font-Merri px-8">

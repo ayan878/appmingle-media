@@ -4,6 +4,7 @@ import { IoMdCall } from "react-icons/io";
 import image1 from "../assets/AppMingle-Media.jpg";
 import image2 from "../assets/Untitled-design-76.png";
 
+
 function AboutUs() {
   return (
     <div className="flex flex-col  lg:flex-row mt-8 lg:mx-8 mb-4">
