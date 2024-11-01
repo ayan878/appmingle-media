@@ -81,17 +81,6 @@ function ScrollableBox() {
   // State to control the active image index for the first image in the pair
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
-  const isSmallDevice = useMediaQuery("only screen and (max-width : 768px)");
-  const isMediumDevice = useMediaQuery(
-    "only screen and (min-width : 769px) and (max-width : 992px)"
-  );
-  const isLargeDevice = useMediaQuery(
-    "only screen and (min-width : 993px) and (max-width : 1200px)"
-  );
-  //    const isExtraLargeDevice = useMediaQuery(
-  //      "only screen and (min-width : 1201px)"
-  //    );
-
   useEffect(() => {
     // Timer to switch the active images every few seconds
     const interval = setInterval(() => {
@@ -105,9 +94,33 @@ function ScrollableBox() {
   const secondImageIndex = (activeImageIndex + 1) % pics.length;
   const thirdImageIndex = (activeImageIndex + 2) % pics.length;
 
+  const isSmallDevice = useMediaQuery("only screen and (max-width : 768px)");
   return (
     <div className="flex">
-      <div className="relative w-full overflow-hidden h-44 mb-4">
+      {isSmallDevice ? (
+        <div className="relative w-full overflow-hidden h-44 mb-4">
+          <AnimatePresence>
+            <motion.div
+              key={activeImageIndex} // Use active index to trigger the animation
+              initial={{ x: "100%" }} // Start off-screen to the right
+              animate={{ x: 0 }} // Animate to the center
+              exit={{ x: "-100%" }} // Exit off-screen to the left
+              transition={{
+                duration: 2, // Adjust speed of the transition
+                ease: "easeInOut",
+              }}
+              className="flex space-x-4 absolute inset-0"
+            >
+              <img
+                src={pics[firstImageIndex].src}
+                alt={pics[firstImageIndex].alt}
+                className="w-full h-full object-contain rounded shadow-lg"
+              />
+            </motion.div>
+          </AnimatePresence>
+        </div>
+      ):(<>
+       <div className="relative w-full overflow-hidden h-44 mb-4">
         <AnimatePresence>
           <motion.div
             key={activeImageIndex} // Use active index to trigger the animation
@@ -161,7 +174,7 @@ function ScrollableBox() {
               ease: "easeInOut",
             }}
             className="flex space-x-4 absolute inset-0"
-          >
+            >
             <img
               src={pics[thirdImageIndex].src}
               alt={pics[thirdImageIndex].alt}
@@ -170,6 +183,7 @@ function ScrollableBox() {
           </motion.div>
         </AnimatePresence>
       </div>
+      </>)}
     </div>
   );
 }
