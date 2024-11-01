@@ -2,7 +2,7 @@ const API_URL = import.meta.env.VITE_API_URL || "https://appmingle-media-backend
 
 const quote = async (formData) => {
   try {
-    const response = await fetch(API_URL, {
+    const response = await fetch(`${API_URL}/quote`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
