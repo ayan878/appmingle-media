@@ -33,7 +33,7 @@ function ScreenForm() {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await sms(formData);
+      const response = await sms();
 
       if (response.success) {
         setResponseMessage("Your submission is successful.");
