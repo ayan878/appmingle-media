@@ -5,7 +5,7 @@ import sendSms from "./controllers/smsController.js";
 
 const router = express.Router();
 
-router.post("/", quotes);
+router.post("/qoute", quotes);
 router.post("/contact-us", quotes);
 router.post("/", sendSms);
 
